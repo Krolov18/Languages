@@ -1,0 +1,11 @@
+présent : [[1:"", 2:"s", 3:"", 4:"ons", 5:"ez", 6:"ent"],[1:"s",2:"s",3:"t",4:"ons",5:"ez",6: "ent"]]
+imparfait: ["ais","ais","ait","ions","iez","aient"]
+passé-simple: [["","s","","mes","tes","rent"],["s","s","t","mes","tes","rent"]]
+futur-simple: ["rai","ras","ra","rons","rez","ront"]
+conditionnel-présent: ["rais","rais","rait","rions","riez","raient"]
+subjonctif-présent: ["","s","","ions","iez","ent"]
+impératif-présent: ["-","e","-","ons","ez","-"]
+infinitif: ["r"]
+participe-présent: ["ant"]
+participe-passé: [["","s","e","es"],["pris","prise","pris","prises"]]
+

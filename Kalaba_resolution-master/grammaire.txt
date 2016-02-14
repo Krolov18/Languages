@@ -1,0 +1,85 @@
+P -> GN[acc=?a] GV[acc=?a] GP GP
+P -> GN[acc=?a] GV[acc=?a] GP
+P -> GN[acc=?a] GV[acc=?a]
+
+GN[acc=?a] -> Det[acc=?a] N[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Adj[acc=?a] N[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a]
+GN[acc=?a] -> Det[acc=?a] N[acc=?a] Adj[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] N[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] Adj[acc=?a] N[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] N[acc=?a] Adj[acc=?a]
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a]
+GN[acc=?a] -> Num[acc=?a] N[acc=?a]
+GN[acc=?a] -> Num[acc=?a] Adj[acc=?a] N[acc=?a]
+GN[acc=?a] -> Num[] N[acc=?a] Adj[acc=?a]
+GN[acc=?a] -> Num[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a]
+
+GN[acc=?a] -> Det[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Adj[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] N[acc=?a] Adj[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] Adj[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] N[acc=?a] Adj[acc=?a] GP
+GN[acc=?a] -> Det[acc=?a] Num[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a] GP
+GN[acc=?a] -> Num[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Num[acc=?a] Adj[acc=?a] N[acc=?a] GP
+GN[acc=?a] -> Num[] N[acc=?a] Adj[acc=?a] GP
+GN[acc=?a] -> Num[acc=?a] Adj[acc=?a] N[acc=?a] Adj[acc=?a] GP
+
+
+
+
+GN[acc=?a] -> Npr[acc=?a]
+
+GV[acc=?a] -> VD[acc=?a] GN GP
+GV[acc=?a] -> VT[acc=?a] GN
+GV[acc=?a] -> VI[acc=?a]
+
+GP -> Prep[det=?d,acc=?a] GN[det=?d,acc=?a]
+
+Prep[det='+'] -> "a" | "de" | "devant" | "sur" | "sous" | "avec" | "dans" | "pour" | "des"
+Prep[acc=[nb="sg",gr="m"],det="-"] -> "du" | "au"
+Prep[acc=[nb="pl"],det="-"] -> "aux"
+Prep[acc=[nb="pl"],det="-"] -> "de"
+
+Num[acc=[nb="pl"]] -> "deux" | "trois" | "quatre"
+
+Det[det="-"] ->
+Det[acc=[nb="sg",gr="m"],det='+'] -> "le" | "un" | "ce"
+Det[acc=[nb="sg",gr="f"],det='+'] -> "une" | "la" | "cette"
+Det[acc=[nb="pl"],det='+'] -> "les" | "des" | "ces"
+
+Adj[acc=[nb="sg",gr="m"]] -> "petit" | "blanc" | "noir" | "grand"
+Adj[acc=[gr="m"]] -> "gros"
+Adj[acc=[nb="sg"]] -> "jaune" | "rouge" | "maigre"
+Adj[acc=[nb="pl"]] -> "jaunes" | "rouges" | "maigres"
+Adj[acc=[nb="sg",gr="f"]] -> "grande" | "blanche" | "noire" | "grosse" | "petite"
+Adj[acc=[nb="pl",gr="m"]] -> "grands" | "noirs" | "blancs" | "petits"
+Adj[acc=[nb="pl",gr="f"]] -> "blanches" | "grandes" | "grosses" | "petites" | "noires"
+
+N[acc=[nb="sg",gr="m"]] -> "coyote" | "village" | "chat" | "oeuf" | "chasseur" | "balai" | "the" | "lit" | "cafe" | "garcon" | "coussin" | "fruit"
+N[acc=[nb="pl",gr="m"]] -> "coyotes" | "villages" | "chats" | "oeufs" | "chasseurs" | "balais" | "thes" | "lits" | "cafes" | "garcons" | "coussins" | "fruits"
+N[acc=[nb="sg",gr="f"]] -> "infirmiere" | "autruche" | "plaine" | "maison" | "fille" | "cuisine" | "chambre" | "chatte" | "table_basse" | "table" | "viande"
+N[acc=[gr="f"]] -> "souris"
+N[acc=[nb="pl",gr="f"]] -> "chambres" | "infirmieres" | "autruches" | "plaines" | "maisons" | "filles" | "cuisines" | "chattes" | "viandes" | "tables"
+
+Npr[acc=[nb="sg",gr="m"]] -> "Nabil" | "nabil"
+Npr[acc=[nb="sg",gr="f"]] -> "Nicole" | "Katisha" | "nicole" | "katisha"
+
+VD[acc=[nb=sg,tens=prs,pers=3]] -> "donne" | "montre" | "offre" | "lance"
+VD[acc=[nb=pl,tens=prs,pers=3]] -> "donnent" | "montrent" | "offrent" | "lancent"
+VD[acc=[nb=sg,tens=pst,pers=3]] -> "donnait" | "montrait" | "offrait" | "lancait"
+VD[acc=[nb=pl,tens=pst,pers=3]] -> "montraient" | "offraient" | "lancaient"
+
+VI[acc=[nb=sg,tens=prs,pers=3]] -> "tombe" | "arrive" | "entre" | "dort"
+VI[acc=[nb=pl,tens=prs,pers=3]] -> "tombent" | "arrivent" | "entrent" | "dorment"
+VI[acc=[nb=sg,tens=pst,pers=3]] -> "tombait" | "arrivait" | "entrait" | "dormait"
+VI[acc=[nb=pl,tens=pst,pers=3]] -> "tombaient" | "arrivaient" | "entraient" | "dormaient"
+
+VT[acc=[nb=sg,tens=prs,pers=3]] -> "supporte" | "boit" | "chasse" | "achete" | "mange" | "donne"
+VT[acc=[nb=pl,tens=prs,pers=3]] -> "supportent" | "boivent" | "chassent" | "achetent" | "mangent" | "donnent"
+VT[acc=[nb=sg,tens=pst,pers=3]] -> "supportait" | "buvait" | "chassait" | "achetait" | "mangeait" | "donnait"
+VT[acc=[nb=pl,tens=pst,pers=3]] -> "supportaient" | "buvaient" | "chassaient" | "achetaient" | "mangeaient" | "donnaient"
+

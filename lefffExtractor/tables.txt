@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS graphies (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+
+CREATE TABLE IF NOT EXISTS phonologies (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+
+CREATE TABLE IF NOT EXISTS constructions (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+
+CREATE TABLE IF NOT EXISTS mophosyntaxe (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+
+CREATE TABLE IF NOT EXISTS categories (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+
+CREATE TABLE IF NOT EXISTS tableName (
+    id INTEGER PRIMARY KEY,
+    colonneName STRUCT
+    )
+

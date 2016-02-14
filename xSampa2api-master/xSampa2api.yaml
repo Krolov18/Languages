@@ -1,0 +1,730 @@
+'!':
+  api: ↓
+  valeur: Descente du ton
+  x-sampa: '!'
+'!\':
+  api: ǃ
+  valeur: Clic post-alvéolaire
+  x-sampa: '!\'
+'"':
+  api: ˈ
+  valeur: Accent tonique principal
+  x-sampa: '"'
+  english_api: 1
+'%':
+  api: ˌ
+  valeur: Accent tonique secondaire
+  x-sampa: '%'
+  english_api: 2
+"0":
+  api: 
+  valeur: Accent tonique absent
+  x-sampa: "0"
+  english_api: "0"
+'&':
+  api: ɶ
+  valeur: Voyelle basse antérieure arrondie
+  x-sampa: '&'
+"'":
+  api: ʲ
+  valeur: Palatalisation
+  x-sampa: ''''
+'*':
+  api:  
+  valeur: Caractère non défini
+  x-sampa: '*'
+'-':
+  api:  
+  valeur: Séparateur
+  x-sampa: '-'
+-\:
+  api: ‿
+  valeur: Marque de liaison
+  x-sampa: -\
+.:
+  api: .
+  valeur: Fin de syllabe
+  x-sampa: .
+/:
+  api:  
+  valeur: Ambiguïté dans les voyelles françaises
+  x-sampa: /
+'1':
+  api: ɨ
+  valeur: Voyelle haute centrale non arrondie
+  x-sampa: '1'
+'2':
+  api: ø
+  valeur: Voyelle moyenne supérieure antérieure arrondie
+  x-sampa: '2'
+'3':
+  api: ɜ
+  valeur: Voyelle moyenne inférieure centrale non arrondie
+  x-sampa: '3'
+3\:
+  api: ɞ
+  valeur: Voyelle moyenne inférieure centrale arrondie
+  x-sampa: 3\
+'4':
+  api: ɾ
+  valeur: Consonne battue alvéolaire voisée
+  x-sampa: '4'
+'5':
+  api: ɫ
+  valeur: Consonne spirante alvéolaire latérale vélarisée (voir aussi _e)
+  x-sampa: '5'
+'6':
+  api: ɐ
+  valeur: Voyelle basse supérieure centrale
+  x-sampa: '6'
+'7':
+  api: ɤ
+  valeur: Voyelle moyenne supérieure postérieure non arrondie
+  x-sampa: '7'
+'8':
+  api: ɵ
+  valeur: Voyelle moyenne supérieure centrale arrondie
+  x-sampa: '8'
+'9':
+  api: œ
+  valeur: Voyelle moyenne inférieure antérieure arrondie
+  x-sampa: '9'
+':':
+  api: ː
+  valeur: Longueur
+  x-sampa: ':'
+:\:
+  api: ˑ
+  valeur: Mi-long
+  x-sampa: :\
+<:
+  api:  
+  valeur: ''
+  x-sampa: <
+<F>:
+  api: ''
+  valeur: Ton globalement descendant
+  x-sampa: <F>
+<R>:
+  api: ''
+  valeur: Ton globalement ascendant
+  x-sampa: <R>
+<\:
+  api: ʢ
+  valeur: Consonne fricative épiglottale voisée
+  x-sampa: <\
+'=':
+  api: ̩
+  valeur: syllabique
+  x-sampa: '='
+=\:
+  api: ǂ
+  valeur: Clic palatal
+  x-sampa: =\
+'>':
+  api:  
+  valeur: ''
+  x-sampa: '>'
+'>\':
+  api: ʡ
+  valeur: Consonne occlusive épiglottale voisée
+  x-sampa: '>\'
+'?':
+  api: ʔ
+  valeur: Coup de glotte
+  x-sampa: '?'
+?\:
+  api: ʕ
+  valeur: Consonne fricative pharyngale voisée
+  x-sampa: ?\
+'@':
+  api: ə
+  valeur: Schwa
+  x-sampa: '@'
+'@\':
+  api: ɘ
+  valeur: Voyelle moyenne supérieure centrale non arrondie
+  x-sampa: '@\'
+A:
+  api: ɑ
+  valeur: Voyelle basse postérieure non arrondie
+  x-sampa: A
+B:
+  api: β
+  valeur: Consonne fricative bilabiale voisée
+  x-sampa: B
+B\:
+  api: ʙ
+  valeur: Consonne roulée bilabiale voisée
+  x-sampa: B\
+C:
+  api: ç
+  valeur: Consonne palatale fricative sourde
+  x-sampa: C
+D:
+  api: ð
+  valeur: Consonne fricative dentale voisée
+  x-sampa: D
+  english_api: dh
+E:
+  api: ɛ
+  valeur: Voyelle moyenne inférieure antérieure non arrondie
+  x-sampa: E
+F:
+  api: ɱ
+  valeur: Consonne occlusive nasale labio-dentale voisée
+  x-sampa: F
+G:
+  api: ɣ
+  valeur: Consonne fricative vélaire voisée
+  x-sampa: G
+G\:
+  api: ɢ
+  valeur: Consonne occlusive uvulaire voisée
+  x-sampa: G\
+G\_<:
+  api: ʛ
+  valeur: Consonne injective uvulaire voisée
+  x-sampa: G\_<
+H:
+  api: ɥ
+  valeur: Consonne spirante labio-palatale voisée
+  x-sampa: H
+H\:
+  api: ʜ
+  valeur: Consonne fricative épiglottale sourde
+  x-sampa: H\
+I:
+  api: ɪ
+  valeur: Voyelle haute inférieure antérieure non arrondie
+  x-sampa: I
+I\:
+  api: ᵻ
+  valeur: Voyelle haute centrale lax non arrondie (pas dans l'API)
+  x-sampa: I\
+J:
+  api: ɲ
+  valeur: Consonne occlusive nasale palatale voisée
+  x-sampa: J
+J\:
+  api: ɟ
+  valeur: Consonne occlusive palatale voisée
+  x-sampa: J\
+J\_<:
+  api: ʄ
+  valeur: Consonne injective palatale voisée
+  x-sampa: J\_<
+K:
+  api: ɬ
+  valeur: Consonne alvéolaire latérale fricative sourde
+  x-sampa: K
+K\:
+  api: ɮ
+  valeur: Consonne alvéolaire latérale fricative voisée
+  x-sampa: K\
+L:
+  api: ʎ
+  valeur: Consonne spirante latérale palatale voisée
+  x-sampa: L
+L\:
+  api: ʟ
+  valeur: Consonne spirante latérale vélaire voisée
+  x-sampa: L\
+M:
+  api: ɯ
+  valeur: Voyelle haute postérieure non arrondie
+  x-sampa: M
+M\:
+  api: ɰ
+  valeur: Consonne spirante vélaire voisée
+  x-sampa: M\
+N:
+  api: ŋ
+  valeur: Consonne occlusive nasale vélaire voisée
+  x-sampa: N
+  english_api: ng
+N\:
+  api: ɴ
+  valeur: Consonne occlusive nasale uvulaire voisée
+  x-sampa: N\
+O:
+  api: ɔ
+  valeur: Voyelle moyenne inférieure postérieure arrondie
+  x-sampa: O
+O\:
+  api: ʘ
+  valeur: Clic bilabial
+  x-sampa: O\
+P:
+  api: ʋ
+  valeur: Consonne spirante labio-dentale voisée
+  x-sampa: P
+Q:
+  api: ɒ
+  valeur: Voyelle basse postérieure arrondie
+  x-sampa: Q
+R:
+  api: ʁ
+  valeur: Consonne fricative uvulaire voisée
+  x-sampa: R
+R\:
+  api: ʀ
+  valeur: Consonne roulée uvulaire voisée
+  x-sampa: R\
+S:
+  api: ʃ
+  valeur: Consonne fricative post-alvéolaire sourde
+  x-sampa: S
+T:
+  api: θ
+  valeur: Consonne fricative dentale sourde
+  x-sampa: T
+  english_api: th
+U:
+  api: ʊ
+  valeur: Voyelle haute inférieure postérieure arrondie
+  x-sampa: U
+U\:
+  api: ᵿ
+  valeur: Voyelle haute centrale lax arrondie (pas dans l'API)
+  x-sampa: U\
+V:
+  api: ʌ
+  valeur: Voyelle moyenne inférieure postérieure non arrondie
+  x-sampa: V
+W:
+  api: ʍ
+  valeur: Consonne fricative labio-vélaire sourde
+  x-sampa: W
+X:
+  api: χ
+  valeur: Consonne fricative uvulaire sourde
+  x-sampa: X
+X\:
+  api: ħ
+  valeur: Consonne fricative pharyngale sourde
+  x-sampa: X\
+Y:
+  api: ʏ
+  valeur: Voyelle haute inférieure antérieure arrondie
+  x-sampa: Y
+"d_Z":
+  api: d͡ʒ
+  valeur: 
+  x-sampa: d_Z
+  english_api: jh
+"a_U":
+  api: 
+  valeur: diphtongue avant arrière
+  x-sampa: a_U
+  english_api: aw
+Z:
+  api: ʒ
+  valeur: Consonne fricative post-alvéolaire voisée
+  x-sampa: Z
+^:
+  api: ↑
+  valeur: Montée du ton
+  x-sampa: ^
+_":
+  api: ̈
+  valeur: Centralisé
+  x-sampa: _"
+_+:
+  api: ̟
+  valeur: Avancé
+  x-sampa: _+
+_-:
+  api: ̠
+  valeur: Rétracté
+  x-sampa: _-
+_/:
+  api: ˇ
+  valeur: Ton montant
+  x-sampa: _/
+_0:
+  api: ̥
+  valeur: Consonne sourde
+  x-sampa: _0
+_<:
+  api: ''
+  valeur: Consonne injective (l'API utilise des symboles distincts pour les injectives)
+  x-sampa: _<
+_=:
+  api: ̩
+  valeur: syllabique
+  x-sampa: _=
+_>:
+  api: ʼ
+  valeur: Consonne éjective
+  x-sampa: _>
+_?\:
+  api: ˤ
+  valeur: Pharyngalisation
+  x-sampa: _?\
+_A:
+  api: ̘
+  valeur: Arrière de la langue avancée
+  x-sampa: _A
+_B:
+  api: ̏
+  valeur: Ton très bas
+  x-sampa: _B
+_B_L:
+  api: ''
+  valeur: Ton bas montant
+  x-sampa: _B_L
+_F:
+  api: ̂
+  valeur: Ton descendant
+  x-sampa: _F
+_G:
+  api: ˠ
+  valeur: Vélarisation
+  x-sampa: _G
+_H:
+  api: ́
+  valeur: Ton haut
+  x-sampa: _H
+_H_T:
+  api: ''
+  valeur: Ton haut montant
+  x-sampa: _H_T
+_L:
+  api: ̀
+  valeur: Ton bas
+  x-sampa: _L
+_M:
+  api: ̄
+  valeur: Ton moyen
+  x-sampa: _M
+_N:
+  api: ̼
+  valeur: Consonne linguo-labiale
+  x-sampa: _N
+_O:
+  api: ̹
+  valeur: Plus arrondi
+  x-sampa: _O
+_R:
+  api: ̌
+  valeur: Ton ascendant
+  x-sampa: _R
+_R_F:
+  api: ''
+  valeur: Ton ascendant puis descendant
+  x-sampa: _R_F
+_T:
+  api: ̋
+  valeur: Ton très haut
+  x-sampa: _T
+_X:
+  api: ̆
+  valeur: Très court
+  x-sampa: _X
+_\:
+  api: ˆ
+  valeur: Ton descendant
+  x-sampa: _\
+_^:
+  api: ̯
+  valeur: Non-syllabique
+  x-sampa: _^
+_a:
+  api: ̺
+  valeur: Voyelle apicale
+  x-sampa: _a
+_c:
+  api: ̜
+  valeur: Moins arrondie
+  x-sampa: _c
+_d:
+  api: ̪
+  valeur: Consonne dentale
+  x-sampa: _d
+_e:
+  api: ̴
+  valeur: Vélarisation ou pharyngalisation ; voir aussi 5
+  x-sampa: _e
+_h:
+  api: ʰ
+  valeur: Aspiration
+  x-sampa: _h
+_j:
+  api: ʲ
+  valeur: Palatalisation
+  x-sampa: _j
+_k:
+  api: ̰
+  valeur: Laryngalisation
+  x-sampa: _k
+_l:
+  api: ˡ
+  valeur: Finale latérale
+  x-sampa: _l
+_m:
+  api: ̻
+  valeur: Consonne laminale
+  x-sampa: _m
+_n:
+  api: ⁿ
+  valeur: nasal release
+  x-sampa: _n
+_o:
+  api: ̞
+  valeur: Plus bas
+  x-sampa: _o
+_q:
+  api: ̙
+  valeur: Arrière de la langue rétracté
+  x-sampa: _q
+_r:
+  api: ̝
+  valeur: Augmenté
+  x-sampa: _r
+_t:
+  api: ̤
+  valeur: breathy voice
+  x-sampa: _t
+_v:
+  api: ̬
+  valeur: Consonne voisée
+  x-sampa: _v
+_w:
+  api: ʷ
+  valeur: Labialisation
+  x-sampa: _w
+_x:
+  api: ̽
+  valeur: mi-centralisé
+  x-sampa: _x
+_}:
+  api: ̚
+  valeur: Finale non audible
+  x-sampa: _}
+_~:
+  api: ̃
+  valeur: Nasalisation
+  x-sampa: _~
+'`':
+  api: ˞
+  valeur: Rhotacisation pour les voyelles, rétroflexion pour les consonnes (l'API
+    utilise un symbole distinct pour les consonnes, t` pour un exemple)
+  x-sampa: '`'
+a:
+  api: a
+  valeur: Voyelle basse antérieure non arrondie
+  x-sampa: a
+b:
+  api: b
+  valeur: Consonne occlusive bilabiale voisée
+  x-sampa: b
+b_<:
+  api: ɓ
+  valeur: Consonne occlusive injective bilabiale voisée
+  x-sampa: b_<
+c:
+  api: c
+  valeur: Consonne occlusive palatale sourde
+  x-sampa: c
+d:
+  api: d
+  valeur: Consonne occlusive alvéolaire voisée
+  x-sampa: d
+d_<:
+  api: ɗ
+  valeur: Consonne injective alvéolaire voisée
+  x-sampa: d_<
+d`:
+  api: ɖ
+  valeur: Consonne occlusive rétroflexe voisée
+  x-sampa: d`
+e:
+  api: e
+  valeur: Voyelle moyenne supérieure antérieure non arrondie
+  x-sampa: e
+f:
+  api: f
+  valeur: Consonne fricative labio-dentale sourde
+  x-sampa: f
+g:
+  api: ɡ
+  valeur: Consonne occlusive vélaire voisée
+  x-sampa: g
+g_<:
+  api: ɠ
+  valeur: Consonne injective vélaire voisée
+  x-sampa: g_<
+h:
+  api: h
+  valeur: Consonne fricative glottale sourde
+  x-sampa: h
+  english_api: HH
+h\:
+  api: ɦ
+  valeur: Consonne fricative glottale voisée
+  x-sampa: h\
+i:
+  api: i
+  valeur: Voyelle haute antérieure non arrondie
+  x-sampa: i
+j:
+  api: j
+  valeur: Consonne spirante palatale voisée
+  x-sampa: j
+j\:
+  api: ʝ
+  valeur: Consonne fricative palatale voisée
+  x-sampa: j\
+k:
+  api: k
+  valeur: Consonne occlusive vélaire sourde
+  x-sampa: k
+l:
+  api: l
+  valeur: Consonne spirante latérale alvéolaire voisée
+  x-sampa: l
+l\:
+  api: ɺ
+  valeur: Consonne battue latérale alvéolaire voisée
+  x-sampa: l\
+l`:
+  api: ɭ
+  valeur: Consonne spirante latérale rétroflexe voisée
+  x-sampa: l`
+m:
+  api: m
+  valeur: Consonne occlusive nasale bilabiale voisée
+  x-sampa: m
+n:
+  api: n
+  valeur: Consonne occlusive nasale alvéolaire voisée
+  x-sampa: n
+n`:
+  api: ɳ
+  valeur: Consonne occlusive nasale rétroflexe voisée
+  x-sampa: n`
+o:
+  api: o
+  valeur: Voyelle moyenne supérieure postérieure arrondie
+  x-sampa: o
+p:
+  api: p
+  valeur: Consonne occlusive bilabiale sourde
+  x-sampa: p
+p\:
+  api: ɸ
+  valeur: Consonne fricative bilabiale sourde
+  x-sampa: p\
+q:
+  api: q
+  valeur: Consonne sourde uvulaire occlusive
+  x-sampa: q
+r:
+  api: r
+  valeur: Consonne roulée alvéolaire voisée
+  x-sampa: r
+r\:
+  api: ɹ
+  valeur: Consonne spirante alvéolaire voisée
+  x-sampa: r\
+r\`:
+  api: ɻ
+  valeur: Consonne spirante rétroflexe centrale
+  x-sampa: r\`
+r`:
+  api: ɽ
+  valeur: Consonne battue rétroflexe voisée
+  x-sampa: r`
+s:
+  api: s
+  valeur: Consonne fricative alvéolaire sourde
+  x-sampa: s
+s\:
+  api: ɕ
+  valeur: Consonne fricative alvéolo-palatale sourde
+  x-sampa: s\
+s`:
+  api: ʂ
+  valeur: Consonne fricative rétroflexe sourde
+  x-sampa: s`
+t:
+  api: t
+  valeur: Consonne occlusive alvéolaire sourde
+  x-sampa: t
+t`:
+  api: ʈ
+  valeur: Consonne occlusive rétroflexe sourde
+  x-sampa: t`
+u:
+  api: u
+  valeur: Voyelle haute postérieure arrondie
+  x-sampa: u
+v:
+  api: v
+  valeur: Consonne fricative labio-dentale voisée
+  x-sampa: v
+v\:
+  api: ʋ
+  valeur: Consonne spirante labio-dentale voisée
+  x-sampa: v\
+w:
+  api: w
+  valeur: Consonne spirante labio-vélaire voisée
+  x-sampa: w
+x:
+  api: x
+  valeur: Consonne fricative vélaire sourde
+  x-sampa: x
+x\:
+  api: ɧ
+  valeur: Consonne fricative palatale-vélaire sourde
+  x-sampa: x\
+y:
+  api: y
+  valeur: Voyelle haute antérieure arrondie
+  x-sampa: y
+z:
+  api: z
+  valeur: Consonne fricative alvéolaire voisée
+  x-sampa: z
+z\:
+  api: ʑ
+  valeur: Consonne alveolo-palatale fricative voisée
+  x-sampa: z\
+z`:
+  api: ʐ
+  valeur: Consonne rétroflexe fricative voisée
+  x-sampa: z`
+'{':
+  api: æ
+  valeur: Voyelle basse supérieure antérieure non arrondie
+  x-sampa: '{'
+'|':
+  api:  
+  valeur: Groupe mineur
+  x-sampa: '|'
+'|\':
+  api: ǀ
+  valeur: Clic dental
+  x-sampa: '|\'
+'|\|\':
+  api: ǁ
+  valeur: clic latéral alvéolaire
+  x-sampa: '|\|\'
+'||':
+  api:  
+  valeur: Groupe majeur
+  x-sampa: '||'
+'}':
+  api: ʉ
+  valeur: Voyelle haute centrale arrondie
+  x-sampa: '}'
+'~':
+  api: ̃
+  valeur: Nasalisation
+  x-sampa: '~'
+'_':
+  api: ͡
+  valeur: pont d'affrication
+  x-sampa: '_'

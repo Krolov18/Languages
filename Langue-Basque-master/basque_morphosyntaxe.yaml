@@ -1,0 +1,128 @@
+# Valeur des traits morphosyntaxiques du basque.
+Noms:
+    Cas:
+        ABS:          Ø
+        ERG:          k
+        DAT:          i
+        GEN-POSS:     en
+        SOC:          ekin
+        DEST:         entzat
+        MOT:          engatik
+        INST:         z
+        INES:         n
+        ABLA:         tik
+        ADLA:         a
+        ADLA_TERM:    aino
+        ADLA_DIREC:   antz
+        ADLA_DESTIB:  ako
+        GENST:        ko
+        PRO:          tzat
+        PART:         ik
+    Nombre:
+        Defini:
+            defini:       a
+            singulier:  Ø
+            Pluriel:
+                pluriel: k
+                exclusif:  e
+                inclusif:  o
+        indefini:     Ø
+    Animeite:
+        anime:        gan
+        inanime:      ta
+
+# Glose des noms
+N:
+    Cas:                [ABS,ERG,DAT,GEN-POSS,SAC,DEST,MOT,INST,INES,ABLA,ADLA,ADLA_TERM,ADLA_DIREC,ADLA_DESTIB,GENST,PRO,PART]
+    Animeite:           [Anime,Inanime]
+    Nombre:
+        Indefini:       []
+        Defini:
+            Singulier:
+            Pluriel:    [Exclusif,Inclusif]
+
+# Ajout, suppression, changement morphophonologique
+# Le singulier en basque retire automatiquement le morpheme d'animeite et peut le retirer à l'inanime.
+# l'inessif singulier est une trace de la forme base+nombre+animeite+cas.
+# L'animeite (ta) en tombant haran+a+e+ta+an, haran+a+e+ta+tik
+# (mendi,a,e,ta,an)
+# 1 v+v = v
+# 2 ta = Ø
+# Datif = haranei soit haran+a+e+r+i
+# Datif = haranoi soit haran+a+o+r+i
+# Datif = mendiei soit mendi+a+e+r+i
+# Datif = mendioi soit mendi+a+o+r+i
+regles:
+    r:     vm_vm 
+    a:    a+a
+    e:    a+e
+    o:    a+o
+    NPR: Cas
+    Pluriel: k
+
+Phonologie:
+    consonnes:    ["zrtpsdfgjklmxvbn"]
+    voyelles:     ["aeiou"]
+
+# Abbreviations pour les gloses.
+raccourcis:
+    ABS:            Absolutif
+    ERG:            Ergatif
+    DAT:            Datif
+    GEN-POSS:       Genitif possessif
+    COM:            Comitatif
+    DEST:           Destinatif
+    CAU:            Causatif
+    INST:           Instrumental
+    INES:           Inessif
+    ABLA:           Ablatif
+    DIRECT:         Directif
+    TERM:           Terminatif
+    PROL:           Prolatif
+    DESTIB:         Destibatiboa
+    GENST:          Genitif Spatio-temporel
+    ESS:            Essif
+    PART:           Partitif
+    ADLA:           Adlatif
+    SOC:            Sociatif
+    MOT:            Motivatif
+    ADLA_TERM:      Adlatif de terminaison
+    ADLA_DIREC:     Adlatif directionnel
+    ADLA_DESTIB:    Adlatif destibatiboa
+    SG:             Singulier
+    PL:             Pluriel
+    PL_EXCL:        Pluriel exclusif
+    PL_INCL:        Pluriel inclusif
+    DEF:            Defini
+    INDEF:          Indefini
+
+# Differences terminologiques suivant la langue ou la theorie dans laquelle on se situe.
+equivalents:
+    Causatif:             Motivatif
+    Directif:            Adlatif
+    Terminatif:            Adlatif de terminaison
+    Prolatif:            Adlatif directionnel
+    Essif:                Prolatif
+    Comitatif:            Sociatif
+    Pluriel_exclusif:    Urruna (eloigne)
+    Pluriel_inclusif:    Hurbila (proche)
+
+# à completer par la suite
+Definitions:
+    Absolutif:                  Sujet d'un verbe intransitif", "complement d'objet direct d'un verbe transitif
+    Ergatif:                    Sujet d'un verbe transitif
+    Datif:                      Complement d'attribution
+    Genitif possessif:          Complement de possession
+    Comitatif:                  Complement d'accompagnement
+    Destinatif:                 Complement de but
+    Causatif:                   Complement de cause
+    Instrumental:               Complement de moyen
+    Inessif:                    Complement determinant le lieu où l'on est (idee de lieu interieur)
+    Ablatif:                    Complement determinant le lieu d'où l'on vient (origine)
+    Directif:                   Complement determinant le lieu où l'on va (lieu de destination)
+    Terminatif:                 Complement determinant le lieu de destination finale
+    Prolatif:                   Complement determinant le lieu de direction
+    Destibatiboa:               Complement mentionne mais inconnu...(à rechercher)
+    Genitif Spatio-temporel:    Complement de lieu, de temps
+    Essif:                      (ou prolatif pour la grammaire basque) Complement exprimant un etat ou une qualite
+    Partitif:                   Complement exprimant la partie d'un tout

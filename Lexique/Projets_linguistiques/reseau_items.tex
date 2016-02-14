@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Korantin Lévêque}
+\title{Réseau d'items}
+\begin{document}
+Mettons l'hypothèse forte suivante:
+
+une connaissance est figée, ce qui veut dire en d'autres termes
+qu'une connaissance une fois qu'elle est entrée dans le lexique
+d'une, elle n'en ressort pas, de deux, sa forme est à jamais celle dans
+laquelle celle-ci était quand elle est entrée dans le lexique.
+Cela n'empêche en rien la création de nouveaux items lexicaux,
+Encore faut-il définir ce qu'est un item lexical.
+
+Mettons une deuxième hypothèse:
+
+La MT contient des connaissances non atomiques, tandis que la MLT
+ne contient que des éléments atomiques.
+
+La notion "atomique" n'est pas à prendre au sens unité minimale!
+Elle est à voire comme étant atomique pour le locuteur soit figée.
+"Il pleut des cordes" peut alors être considéré comme une connaissance,
+soit une notion atomique. En même temps à un temps t du développement
+du lexique d'un locuteur lambda, "Papa mange des gâteaux" peut être vu
+comme un atome. 
+La création de nouvelles connaissances, peut soit être l'entrée de séquences plus grandes
+passer de "jardin" et "municipal" à "jardin municipal" ou bien l'inverse
+passer de "Papa mange des gâteaux" aux faisceaux de pointeurs de connaissances
+qu'une description linguistique peut décrire. 
+La réflexion de cette entreprise n'est en rien de remettre en cause ce qui a été fait
+précédemment, comme cette modélisation n'a pas pour but non plus d'apporter LA vérité,
+le formalisme comme la théorie doit pouvoir rendre compte des niveaux du développement
+sans JAMAIS contraindre les éléments entrant. L’inconvénient de certaines théories
+et/ou formalismes d'aujourd'hui (ou un peu plus anciens) comme X-bar, GB,
+OT, LFG, GPSG, HPSG, FUG, TAG, Prolog et j'en passe. On est contraint au formalisme.
+En soit, si je prends la casquette du linguiste, ces formalismes sont "parfaits".
+Ils permettent d'expliquer, de décrire ou encore formaliser l'objet d'étude qui est la langue.
+Seulement, s'il on change de point de point de vue, si au lieu de regarder la bouteille de l'intérieur, 
+je la regarde de l'extérieur, soit si je me place au niveau du locuteur, la notion de structure prend un tout autre sens. En rendant au formalisme une simplicité qui est celle du faisceau de pointeurs, cela devrait permettre aux connaissances de mieux interagir entre elles. Le coeur de l'entreprise n'est donc plus le "trait" comme en HPSG mais le "faisceau". Ainsi la fréquence commence à prendre son sens. Chaque pointeur comme chaque item va posséder une fréquence relative à l'objet auquel il réfère. un pointeur va alors pouvoir posséder une fréquence qui évolue, un item aussi. Cette fréquence évolue par rapport à la taille des données, mais aussi par leur nombre d'utilisation.
+Voir l'évolution d'une forme comme non pas une transformation mais la création d'une nouvelle forme sur l'inspiration de la précédente. L'espace mémoire explose-t-il ? pas nécessairement. Arrivé à un moment, les connaissances se stabilisent. Ce sont les pointeurs qui vont jouer un rôle actif dans la construction du lexique. Ces pointeurs vont à la fois avoir un "poids" (la fréquence) et en même temps plusieurs points de rattachement. Pour reprendre l'exemple de la lettre "a", autant elle n'a pour valeur la seule et unique connaissance qui est la lettre "a", mais ce pointeur peut pointer cette connaissance vers une infinité de directions et une infinité de fois.
+
+\end{document}

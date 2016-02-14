@@ -1,0 +1,59 @@
+NOIX.F.SG#Correct Answer!
+%50%NOIX.F-SG
+%50%NOIX.M-SG
+%50%NOIX-M-SG
+
+
+
+Sauf si vous avez déjà, mais enrichir lexique380 avec la modification de 
+la colonne (ou l'ajout d'une nouvelle genre 
+glose dans laquelle on a la glose du mot:
+exemple : bouts de lignes extraites de lexique 380
+noix|nwa|noix|NOM|f||
+l'info qu'on peut extraire de ce type de ligne c'est qu'on sait que c'est féminin
+mais on ne peux pas déterminer le nombre, donc déjà on a un bout exploitable .(SG|PL)
+seulement on ne peut toujours pas dire si c'est .f ou -f
+en comparant avec:
+souris|suRi|souris|NOM|||
+soit normalement SOURIS.F.(SG|PL)
+selon la base la ligne devrait être SOURIS.(F|M).(SG|PL) mais je pense que
+c'est une erreur.
+Du coup 
+
+SN = Det N
+Det = x=G, y=N
+N = x=G, y=N
+
+Le		chien 		dort
+LE-M-SG	CHIEN.M.SG	DORMIR.IND.3.SG
+La		C
+LE-F-SG CHIEN-F.SG	DORMIR.IND.3.SG
+
+
+Si on cherche (le|la|les) N
+
+
+
+
+une remarque sur l'ordre, sur les éléments et puis pour chaque élément, une remarque sur le contenu
+
+
+
+
+
+Si mauvaise réponse:
+
+.F.SG# 
+-F-SG# Où voyez vous une marque du féminin, singulier, 
+.F-SG# 
+-F.SG# 
+.M.SG# 
+-M-SG# 
+.M-SG# 
+-M.SG# 
+
+0 représente le mot cible
+1 représente la ou les lettres qui suivent le (.|-)
+
+"-": "Ah bon {0} est marqué du {1}"
+".": "{1} n'est-il pas présent dans {0}"

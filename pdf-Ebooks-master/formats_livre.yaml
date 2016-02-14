@@ -1,0 +1,16 @@
+# un livre est composé de chapitres qui sont eux mêmes composés de paragraphes qui sont eux mêmes composés de phrases
+
+livre:
+ chapitre:
+  paragraphe:
+   phrase:
+
+<book author, subject, publisher, edition, title, nb_pages>
+ <chapter num_chap, num_paragraph>
+  <paragraph num_par, num_sent>
+   <sentence num_sent>
+    I am Charlie.
+   </sentence>
+  </paragraph>
+ </chapter>
+</book>

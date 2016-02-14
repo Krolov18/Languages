@@ -1,0 +1,47 @@
+CREATE TABLE IF NOT EXISTS metaDatasCorpus (
+	lenCorpus INT, 
+	lenVocabulaire INT
+);
+INSERT INTO metadatasCorpus VALUES(1,1);
+
+CREATE TABLE IF NOT EXISTS tableNbFormesParCategorie AS
+SELECT forme, categorie, COUNT(forme) AS nbFormesParCategorie
+FROM corpusDatas
+GROUP BY forme, categorie;
+
+CREATE TABLE IF NOT EXISTS tableNbFormesParForme AS
+SELECT forme, COUNT(forme) AS nbFormesParForme
+FROM corpusDatas
+GROUP BY forme;
+
+CREATE TABLE IF NOT EXISTS tableNbCategoriesParForme AS
+SELECT forme, COUNT(forme) AS nbCategoriesParFormes
+FROM tableNbFormesParCategorie
+GROUP BY forme;
+
+UPDATE metaDatasCorpus
+SET lenCorpus = (
+				SELECT COUNT(forme)
+				FROM corpusDatas
+				);
+
+UPDATE metaDatasCorpus
+SET lenVocabulaire = (
+					SELECT COUNT(forme)
+					FROM tableNbFormesParForme
+					);
+
+CREATE TABLE IF NOT EXISTS corpusCalcule AS
+SELECT
+	tableNbFormesParCategorie.forme AS formes,
+	tableNbFormesParCategorie.categorie AS categories,
+	tableNbCategoriesParForme.nbCategoriesParFormes AS nbCategories,
+	tableNbFormesParForme.nbFormesParForme AS nbFormes,
+	tableNbFormesParCategorie.nbFormesParCategorie AS nbFormesParCat
+FROM tableNbFormesParCategorie
+LEFT JOIN tableNbCategoriesParForme ON tableNbFormesParCategorie.forme = tableNbCategoriesParForme.forme
+LEFT JOIN tableNbFormesParForme ON tableNbFormesParCategorie.forme = tableNbFormesParForme.forme;
+
+DROP TABLE tableNbFormesParCategorie;
+DROP TABLE tableNbFormesParForme;
+DROP TABLE tableNbCategoriesParForme;

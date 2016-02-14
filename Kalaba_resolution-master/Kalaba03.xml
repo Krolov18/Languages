@@ -1,0 +1,402 @@
+<pdf2xml>
+<page number="1" width="595.276" height="841.89">
+<text top="34" left="268" width="58" height="21">Kalaba</text>
+<text top="60" left="225" width="143" height="18">Exercice pour TD 03</text>
+<text top="102" left="26" width="541" height="12">Imaginez que vous faites partie d’une équipe chargée de fabriquer une grammaire du kalaba. Un de vos col-</text>
+<text top="116" left="26" width="541" height="12">lègues, un linguiste débutant, s’est déjà rendu sur le terrain, il a constitué un échantillon et transcrit les don-</text>
+<text top="131" left="26" width="25" height="12">nées.</text>
+<text top="157" left="44" width="37" height="12">Corpus</text>
+<text top="181" left="62" width="189" height="13">saoferibikoentermeladingoomulenikolan</text>
+<text top="181" left="38" width="13" height="12">(1)</text>
+<text top="196" left="62" width="185" height="12">Le chasseur offrait un coyote à Nicole</text>
+<text top="214" left="62" width="194" height="13">ilslipamatuekekoeimjuosbigeikonersmwiz</text>
+<text top="214" left="38" width="13" height="12">(2)</text>
+<text top="229" left="62" width="267" height="12">Les deux autruches dorment avec la grande infirmière</text>
+<text top="247" left="62" width="319" height="13">efolimtuekbigekblakekikoekofimibigisukigerlagovasmoleekobedosin</text>
+<text top="247" left="38" width="13" height="12">(3)</text>
+<text top="262" left="62" width="340" height="12">Les deux grands cafés noirs tombent dans le petit lit de la grande fille</text>
+<text top="280" left="62" width="185" height="13">sabajifatewajteiloentermblakkilaekofim</text>
+<text top="280" left="38" width="13" height="12">(4)</text>
+<text top="294" left="62" width="225" height="12">Un gros chasseur blanc achète des cafés noirs</text>
+<text top="313" left="62" width="254" height="13">ilitamafriekablakekekoekatosatukawajtkebaemawsom</text>
+<text top="313" left="38" width="13" height="12">(5)</text>
+<text top="327" left="62" width="270" height="12">Les trois chats noirs mangent ces deux souris blanches</text>
+<text top="345" left="62" width="260" height="13">ilfroafmatuekeloemawsosilaegmeleimjuonekobedosund</text>
+<text top="346" left="38" width="13" height="12">(6)</text>
+<text top="360" left="62" width="265" height="12">Deux souris lancent un oeuf à une autruche sous le lit</text>
+<text top="378" left="62" width="200" height="13">iberabekobedosatukafatkawajtkelaekatom</text>
+<text top="379" left="38" width="13" height="12">(7)</text>
+<text top="393" left="62" width="193" height="12">Le lit supportait deux gros chats blancs</text>
+<text top="411" left="62" width="279" height="13">ebajipmubihusagovtuekiloeentermulinikolagovforkikaeegm</text>
+<text top="411" left="38" width="13" height="12">(8)</text>
+<text top="426" left="62" width="343" height="12">Deux chasseurs de cette maison achetaient les quatre oeufs de Nicole</text>
+<text top="444" left="62" width="150" height="13">islipabajeloeelokatosukohusafes</text>
+<text top="444" left="38" width="13" height="12">(9)</text>
+<text top="459" left="62" width="199" height="12">Un chat jaune dormait devant la maison</text>
+<text top="477" left="62" width="199" height="13">egetifmtueksmolekiloeentermulonikolawiz</text>
+<text top="477" left="32" width="19" height="12">(10)</text>
+<text top="492" left="62" width="209" height="12">Deux petits chasseurs arrivent avec Nicole</text>
+<text top="510" left="62" width="182" height="13">ibajapelonabiloselabedomukerumanfar</text>
+<text top="510" left="32" width="19" height="12">(11)</text>
+<text top="525" left="62" width="182" height="12">Nabil achetait un lit pour la chambre</text>
+<text top="543" left="62" width="204" height="13">ilslipamatuekabigekeboebojosekobedosund</text>
+<text top="543" left="32" width="19" height="12">(12)</text>
+<text top="557" left="62" width="217" height="12">Ces deux grands garçons dorment sous le lit</text>
+<text top="576" left="62" width="278" height="13">ilSoabmabigekeloebojoselaemawsomukihusagovukeegerlan</text>
+<text top="576" left="32" width="19" height="12">(13)</text>
+<text top="590" left="62" width="319" height="12">Des grands garçons montraient des souris aux filles de la maison</text>
+<text top="608" left="62" width="242" height="13">ilSoafmibigikivaligovekoedingoosikaeegmekeekaton</text>
+<text top="609" left="32" width="19" height="12">(14)</text>
+<text top="623" left="62" width="297" height="12">Les coyotes de la grande plaine montrent les oeufs aux chats</text>
+<text top="641" left="62" width="251" height="13">efolipmekieimjuogovikoeegmukohusaundulonikolafes</text>
+<text top="642" left="32" width="19" height="12">(15)</text>
+<text top="656" left="62" width="319" height="12">Les oeufs des autruches tombaient sous la maison devant Nicole</text>
+<text top="674" left="62" width="284" height="13">eberifmtuekbigeklinekiboeentermekaebedomeloekaSenoswiz</text>
+<text top="674" left="32" width="19" height="12">(16)</text>
+<text top="689" left="62" width="354" height="12">Ces deux grands chasseurs maigres supportent les lits avec des coussins</text>
+<text top="707" left="62" width="339" height="13">egiveikientergovukogerlaatukelaeimjuomikivaligovikeenersnukokiSenain</text>
+<text top="707" left="32" width="19" height="12">(17)</text>
+<text top="722" left="62" width="421" height="12">La fille du chasseur donne deux autruches aux infirmières de la plaine dans la cuisine</text>
+<text top="740" left="62" width="225" height="13">ildrikabmatuekeloemawsosilaetimubotabelaund</text>
+<text top="740" left="32" width="19" height="12">(18)</text>
+<text top="755" left="62" width="227" height="12">Deux souris buvaient des thés sous cette table</text>
+</page>
+<page number="2" width="595.276" height="841.89">
+<text top="61" left="62" width="305" height="13">egivimekitawnogovikoenersmelaebananomikeeenternukihusagov</text>
+<text top="61" left="32" width="19" height="12">(19)</text>
+<text top="76" left="62" width="354" height="12">Les infirmières du village donnent des fruits aux chasseurs de la maison</text>
+<text top="94" left="62" width="210" height="13">ilslipamekitawnogovekoemawsosekokatosfes</text>
+<text top="94" left="32" width="19" height="12">(20)</text>
+<text top="109" left="62" width="217" height="12">Les souris du village dorment devant le chat</text>
+<text top="127" left="62" width="296" height="13">ilgetafmibigiskiliniskukiegerlagovasmolekekoebedosukorumain</text>
+<text top="127" left="32" width="19" height="12">(21)</text>
+<text top="141" left="62" width="319" height="12">Les petits lits des grandes filles maigres arrivent dans la chambre</text>
+<text top="160" left="62" width="124" height="13">iberafelokaSenosekakatom</text>
+<text top="160" left="32" width="19" height="12">(22)</text>
+<text top="174" left="62" width="138" height="12">Un coussin supporte le chat</text>
+<text top="193" left="62" width="221" height="13">egetifmtueksmolekikoeegmabigeekoimjuosund</text>
+<text top="193" left="32" width="19" height="12">(23)</text>
+<text top="207" left="62" width="266" height="12">Les deux petits oeufs arrivent sous la grande autruche</text>
+<text top="225" left="62" width="260" height="13">ildrikabmafriekeboekatosulikatiSagovikatimukokiSenain</text>
+<text top="226" left="32" width="19" height="12">(24)</text>
+<text top="240" left="62" width="277" height="12">Ces trois chats buvaient le thé de Katisha dans la cuisine</text>
+<text top="258" left="62" width="176" height="13">eitimikoenersmilaeegmeloekaSenoson</text>
+<text top="259" left="32" width="19" height="12">(25)</text>
+<text top="273" left="62" width="252" height="12">Les infirmières mangent des oeufs sur des coussins</text>
+<text top="291" left="62" width="381" height="13">elentefmfriisekukoegerlarediseukohusafesatukebaedingoomajeloekeloeswiposwiz</text>
+<text top="291" left="32" width="19" height="12">(26)</text>
+<text top="306" left="62" width="428" height="12">Les trois filles chassent ces deux coyotes devant la maison rouge avec des balais jaunes</text>
+<text top="324" left="62" width="140" height="13">elberefmukoerumaelaebedom</text>
+<text top="324" left="32" width="19" height="12">(27)</text>
+<text top="339" left="62" width="163" height="12">Les chambres supportent des lits</text>
+<text top="357" left="62" width="153" height="13">eitipmtuekiboenersmtukilaeegm</text>
+<text top="357" left="32" width="19" height="12">(28)</text>
+<text top="372" left="62" width="219" height="12">Ces deux infirmières mangeaient deux oeufs</text>
+<text top="390" left="62" width="209" height="13">igivabelonabilosasmolelabedomobigikenersn</text>
+<text top="390" left="32" width="19" height="12">(29)</text>
+<text top="404" left="62" width="231" height="12">Nabil donnait un petit lit à la grande infirmière</text>
+<text top="423" left="62" width="226" height="13">efolipmtuekiloekofimukirumagovekoekaSenoson</text>
+<text top="423" left="32" width="19" height="12">(30)</text>
+<text top="437" left="62" width="260" height="12">Deux cafés tombaient sur les coussins de la chambre</text>
+<text top="456" left="62" width="189" height="13">efoleulonikolaekibedogovekoekaSenoson</text>
+<text top="456" left="32" width="19" height="12">(31)</text>
+<text top="470" left="62" width="174" height="12">Nicole tombe sur les coussins du lit</text>
+<text top="488" left="62" width="194" height="13">ifolaelonabilosismolibinersgovekobedosin</text>
+<text top="489" left="32" width="19" height="12">(32)</text>
+<text top="503" left="62" width="236" height="12">Nabil tombe dans le lit de cette petite infirmière</text>
+<text top="521" left="62" width="232" height="13">eslipeulinikolagovukogerlaelinabilogovukorumain</text>
+<text top="522" left="32" width="19" height="12">(33)</text>
+<text top="536" left="62" width="234" height="12">La fille de Nicole dort dans la chambre de Nabil</text>
+<text top="554" left="62" width="264" height="13">eoferibmikoenersmilakofimeliemawsogovotukikeeentern</text>
+<text top="554" left="32" width="19" height="12">(34)</text>
+<text top="569" left="62" width="303" height="12">Les infirmières offraient un café aux deux chasseurs de souris</text>
+<text top="587" left="62" width="204" height="13">igetafelobojosituiskukiegerlagovukorumain</text>
+<text top="587" left="32" width="19" height="12">(35)</text>
+<text top="602" left="62" width="239" height="12">Un garçon arrive dans la chambre des deux filles</text>
+<text top="620" left="62" width="241" height="13">ilslipamawajtekekoekatostuisekfatisekuloetabelaon</text>
+<text top="620" left="32" width="19" height="12">(36)</text>
+<text top="635" left="62" width="242" height="12">Les chats blancs dorment sur deux grosses tables</text>
+<text top="653" left="62" width="200" height="13">elgetefmtuisekuloegerlaatuekeloebojoswiz</text>
+<text top="653" left="32" width="19" height="12">(37)</text>
+<text top="668" left="62" width="186" height="12">Deux filles arrivent avec deux garçons</text>
+<text top="686" left="62" width="238" height="13">elslipemulikatiSagovukoegerlaawajteelomawsoswiz</text>
+<text top="686" left="32" width="19" height="12">(38)</text>
+<text top="700" left="62" width="264" height="12">Les filles de Katisha dorment avec une souris blanche</text>
+<text top="719" left="62" width="226" height="13">ilgetabmatuekajeloekeloedingoosbigeikovalimin</text>
+<text top="719" left="32" width="19" height="12">(39)</text>
+<text top="733" left="62" width="260" height="12">Deux coyotes jaunes arrivaient dans la grande plaine</text>
+<text top="751" left="62" width="244" height="13">ifroabelobojosajeloelaswipomikivaligovekeedingoon</text>
+<text top="752" left="32" width="19" height="12">(40)</text>
+<text top="766" left="62" width="281" height="12">Un garçon lançait un balai jaune aux coyotes de la plaine</text>
+<text top="803" left="294" width="5" height="12">2</text>
+</page>
+<page number="3" width="595.276" height="841.89">
+<text top="61" left="62" width="238" height="13">ifolaeboimjuoselokaSenosontueksmolekiloeegmwiz</text>
+<text top="61" left="32" width="19" height="12">(41)</text>
+<text top="76" left="62" width="294" height="12">Cette autruche tombe sur un coussin avec deux petits oeufs</text>
+<text top="94" left="62" width="212" height="13">ilfolamasmolekekoemawsosablakeelokatoson</text>
+<text top="94" left="32" width="19" height="12">(42)</text>
+<text top="109" left="62" width="212" height="12">Les petites souris tombent sur un chat noir</text>
+<text top="127" left="62" width="183" height="13">ilentabmatuekeboedingooselaeimjuom</text>
+<text top="127" left="32" width="19" height="12">(43)</text>
+<text top="141" left="62" width="211" height="12">Ces deux coyotes chassaient des autruches</text>
+<text top="160" left="62" width="203" height="13">ilfroabmekoedingooselamawsomebeekaton</text>
+<text top="160" left="32" width="19" height="12">(44)</text>
+<text top="174" left="62" width="215" height="12">Les coyotes lançaient une souris à ces chats</text>
+<text top="193" left="62" width="252" height="13">iberafasmoleawajteekobedosafatkablakkelaekaSenom</text>
+<text top="193" left="32" width="19" height="12">(45)</text>
+<text top="207" left="62" width="243" height="12">Le petit lit blanc supporte des gros coussins noirs</text>
+<text top="225" left="62" width="205" height="13">iitaasmoleebobojosebiimjuogovtukikaeegm</text>
+<text top="226" left="32" width="19" height="12">(46)</text>
+<text top="240" left="62" width="272" height="12">Ce petit garçon mange les deux oeufs de cette autruche</text>
+<text top="258" left="62" width="210" height="13">eitimsmolekiloeentermblakilaegmukorumain</text>
+<text top="259" left="32" width="19" height="12">(47)</text>
+<text top="273" left="62" width="295" height="12">Des petits chasseurs mangent un oeuf noir dans la chambre</text>
+<text top="291" left="62" width="260" height="13">ilitapmatuekeloeimjuoselaebananomtuisekuboehusafes</text>
+<text top="291" left="32" width="19" height="12">(48)</text>
+<text top="306" left="62" width="314" height="12">Deux autruches mangeaient des fruits devant ces deux maisons</text>
+<text top="324" left="62" width="175" height="13">ilberafmawajtekekoemawsosilanersm</text>
+<text top="324" left="32" width="19" height="12">(49)</text>
+<text top="339" left="62" width="228" height="12">Les souris blanches supportent une infirmière</text>
+<text top="357" left="62" width="215" height="13">elbajemtuiseksmolisekukoegerlabigkilaekofim</text>
+<text top="357" left="32" width="19" height="12">(50)</text>
+<text top="372" left="62" width="234" height="12">Les deux petites filles achètent des grands cafés</text>
+<text top="390" left="62" width="239" height="13">egivimikoenersmekaswipomelenabilonukotabelaon</text>
+<text top="390" left="32" width="19" height="12">(51)</text>
+<text top="404" left="62" width="251" height="12">Les infirmières donnent le balai à Nabil sur la table</text>
+<text top="423" left="62" width="251" height="13">eSoifmeliedingoogovtuekiloeentermikamitmebekaton</text>
+<text top="423" left="32" width="19" height="12">(52)</text>
+<text top="437" left="62" width="275" height="12">Deux chasseurs de coyotes montrent la viande à ce chat</text>
+<text top="456" left="62" width="159" height="13">ilitamatuekeloekatoselaemawsom</text>
+<text top="456" left="32" width="19" height="12">(53)</text>
+<text top="470" left="62" width="154" height="12">Deux chats mangent des souris</text>
+<text top="488" left="62" width="249" height="13">ilgivabmatuekeloebojosablakkelaemawsomeleekaton</text>
+<text top="489" left="32" width="19" height="12">(54)</text>
+<text top="503" left="62" width="263" height="12">Deux garçons donnaient des souris noires à des chats</text>
+<text top="521" left="62" width="212" height="13">ildrikamatuekabigekeloebojossmolkilaekofim</text>
+<text top="522" left="32" width="19" height="12">(55)</text>
+<text top="536" left="62" width="221" height="12">Deux grands garçons boivent des petits cafés</text>
+<text top="554" left="62" width="151" height="13">saentifblakeikotimekaedingoom</text>
+<text top="554" left="32" width="19" height="12">(56)</text>
+<text top="569" left="62" width="145" height="12">Le thé noir chasse les coyotes</text>
+<text top="587" left="62" width="352" height="13">eoferibmfriekiboeentermikievaligovatukelaeimjuomoasmoloawajtekebojon</text>
+<text top="587" left="32" width="19" height="12">(57)</text>
+<text top="602" left="62" width="383" height="12">Ces trois chasseurs offraient deux autruches des plaines au petit garçon blanc</text>
+<text top="620" left="62" width="241" height="13">ilberabmaforekekoeswiposukikiSenagovukatabelam</text>
+<text top="620" left="32" width="19" height="12">(58)</text>
+<text top="635" left="62" width="253" height="12">Les quatre balais supportaient la table de la cuisine</text>
+<text top="653" left="62" width="247" height="13">eloferebmtuisekuloegerlaaredkelaekaSenomekebojon</text>
+<text top="653" left="32" width="19" height="12">(59)</text>
+<text top="668" left="62" width="249" height="12">Deux filles offraient des coussins rouges au garçon</text>
+<text top="686" left="62" width="233" height="13">eberibmtuekikoeentermelinabilogovekaedingoom</text>
+<text top="686" left="32" width="19" height="12">(60)</text>
+<text top="700" left="62" width="261" height="12">Les deux chasseurs supportaient les coyotes de Nabil</text>
+<text top="719" left="62" width="214" height="13">sagiviikoentermibamitmekiebojogovekekaton</text>
+<text top="719" left="32" width="19" height="12">(61)</text>
+<text top="733" left="62" width="255" height="12">Le chasseur donne cette viande au chat des garçons</text>
+<text top="751" left="62" width="188" height="13">igetafelomawsosulikatiSagovekobedosin</text>
+<text top="752" left="32" width="19" height="12">(62)</text>
+<text top="766" left="62" width="188" height="12">Une souris arrive dans le lit de Katisha</text>
+<text top="803" left="294" width="5" height="12">3</text>
+</page>
+<page number="4" width="595.276" height="841.89">
+<text top="61" left="62" width="177" height="13">eberefulonikolaatukafatkekaeimjuom</text>
+<text top="61" left="32" width="19" height="12">(63)</text>
+<text top="76" left="62" width="213" height="12">Nicole supporte les deux grosses autruches</text>
+<text top="94" left="62" width="292" height="13">efroibmtueklinekiloeentermjelokilaeegmulekatiSanukokiSenain</text>
+<text top="94" left="32" width="19" height="12">(64)</text>
+<text top="109" left="62" width="375" height="12">Deux chasseurs maigres lançaient des oeufs jaunes à Katisha dans la cuisine</text>
+<text top="127" left="62" width="267" height="13">ilenteramatuekajeloekeboebananosekikatogovukohusain</text>
+<text top="127" left="32" width="19" height="12">(65)</text>
+<text top="141" left="62" width="264" height="12">Ces deux fruits jaunes entrent dans la maison du chat</text>
+<text top="160" left="62" width="209" height="13">egetifmtuekikoenersmikientergovukorumain</text>
+<text top="160" left="32" width="19" height="12">(66)</text>
+<text top="174" left="62" width="289" height="12">Les deux infirmières arrivent dans la chambre du chasseur</text>
+<text top="193" left="62" width="292" height="13">ilberabmalinekeboebojosikieentergovatukawajtkekaemawsom</text>
+<text top="193" left="32" width="19" height="12">(67)</text>
+<text top="207" left="62" width="361" height="12">Ces garçons maigres supportaient les deux souris blanches des chasseurs</text>
+<text top="225" left="62" width="220" height="13">eSoibmtuekiloenersmelabedomotuiskuleekatan</text>
+<text top="226" left="32" width="19" height="12">(68)</text>
+<text top="240" left="62" width="243" height="12">Deux infirmières montraient un lit à deux chattes</text>
+<text top="258" left="62" width="227" height="13">elbajepmuboegerlaelaeswipomjeloiseukohusafes</text>
+<text top="259" left="32" width="19" height="12">(69)</text>
+<text top="273" left="62" width="267" height="12">Ces filles achetaient des balais devant la maison jaune</text>
+<text top="291" left="62" width="281" height="13">eSoefulonikolaukihusagovukakiSenamikienersgovukeegerlan</text>
+<text top="291" left="32" width="19" height="12">(70)</text>
+<text top="306" left="62" width="308" height="12">Nicole montre la cuisine de la maison aux filles des infirmières</text>
+<text top="324" left="62" width="266" height="13">efolepekoeswiposwizukotabelaukokiSenainikoeentermfes</text>
+<text top="324" left="32" width="19" height="12">(71)</text>
+<text top="339" left="62" width="333" height="12">La table avec les balais tombait devant les chasseurs dans la cuisine</text>
+<text top="357" left="62" width="150" height="13">efoleulotabelablakiseukorumain</text>
+<text top="357" left="32" width="19" height="12">(72)</text>
+<text top="372" left="62" width="196" height="12">Une table tombe dans la chambre noire</text>
+<text top="390" left="62" width="216" height="13">ientabasmoleelokatosafrikawajtkelaemawsom</text>
+<text top="390" left="32" width="19" height="12">(73)</text>
+<text top="404" left="62" width="212" height="12">Un petit chat chassait trois souris blanches</text>
+<text top="423" left="62" width="303" height="13">ilgetafmaredekekoebananoselinabilogovukigerlagovekotawnosin</text>
+<text top="423" left="32" width="19" height="12">(74)</text>
+<text top="437" left="62" width="286" height="12">Les fruits rouges arrivent dans le village de la fille de Nabil</text>
+<text top="456" left="62" width="240" height="13">edrikeubogerlablakilatimtueksmolekikoeentermwiz</text>
+<text top="456" left="32" width="19" height="12">(75)</text>
+<text top="470" left="62" width="276" height="12">Cette fille boit un thé noir avec les deux petits chasseurs</text>
+<text top="488" left="62" width="226" height="13">ilslipamatuekawajtekekoekatosloiseukotabelaon</text>
+<text top="489" left="32" width="19" height="12">(76)</text>
+<text top="503" left="62" width="240" height="12">Les deux chats blancs dorment sur la table basse</text>
+<text top="521" left="62" width="324" height="13">saenteriiawajtkeliemawsogovikoentermulikatiSagovbigiseukokiSenain</text>
+<text top="522" left="32" width="19" height="12">(77)</text>
+<text top="536" left="62" width="348" height="12">Le chasseur de souris blanches entre dans la grande cuisine de Katisha</text>
+<text top="554" left="62" width="166" height="13">eberefukotabelaaredkelaebananom</text>
+<text top="554" left="32" width="19" height="12">(78)</text>
+<text top="569" left="62" width="170" height="12">La table supporte des fruits rouges</text>
+<text top="587" left="62" width="232" height="13">ioferaelonabilosibaemitmulenikolanukekiSenanfar</text>
+<text top="587" left="32" width="19" height="12">(79)</text>
+<text top="602" left="62" width="230" height="12">Nabil offre ces viandes à Nicole pour la cuisine</text>
+<text top="620" left="62" width="234" height="13">ilbajamasmolekekoebojosatukawajtkelaekaSenom</text>
+<text top="620" left="32" width="19" height="12">(80)</text>
+<text top="635" left="62" width="241" height="12">Les petits garçons achètent deux coussins blancs</text>
+<text top="653" left="62" width="209" height="13">eentibmikoenersmelamawsomeloeswiposwiz</text>
+<text top="653" left="32" width="19" height="12">(81)</text>
+<text top="668" left="62" width="259" height="12">Les infirmières chassaient une souris avec des balais</text>
+<text top="686" left="62" width="209" height="13">ilgetafmeboeimjuoselinabilogovekotawnosin</text>
+<text top="686" left="32" width="19" height="12">(82)</text>
+<text top="700" left="62" width="228" height="12">Ces autruches arrivent dans le village de Nabil</text>
+<text top="719" left="62" width="309" height="13">eSoibmikoeentermelaimjuomotuiskosmoliskukeegerlanukohusafes</text>
+<text top="719" left="32" width="19" height="12">(83)</text>
+<text top="733" left="62" width="392" height="12">Les chasseurs montraient une autruche aux deux petites filles devant la maison</text>
+<text top="751" left="62" width="245" height="13">ilgetafmeloebojosotuiskosmoliskowajtiskukeeruman</text>
+<text top="752" left="32" width="19" height="12">(84)</text>
+<text top="766" left="62" width="306" height="12">Des garçons arrivent dans les deux petites chambres blanches</text>
+<text top="803" left="294" width="5" height="12">4</text>
+</page>
+<page number="5" width="595.276" height="841.89">
+<text top="61" left="62" width="378" height="13">sadrikibfateikoentermilakofimismolisiwajtisukihusagovukikiSenagovukotabelaon</text>
+<text top="61" left="32" width="19" height="12">(85)</text>
+<text top="76" left="62" width="414" height="12">Le gros chasseur buvait un café sur la table de la cuisine de la petite maison blanche</text>
+<text top="94" left="62" width="235" height="13">ienteraasmoleelomawsosiafatekikatogovukehusan</text>
+<text top="94" left="32" width="19" height="12">(86)</text>
+<text top="109" left="62" width="253" height="12">Une petite souris entre dans la maison du gros chat</text>
+<text top="127" left="62" width="251" height="13">idrikaasmoleekomawsossmolilatimabigeebobedosund</text>
+<text top="127" left="32" width="19" height="12">(87)</text>
+<text top="141" left="62" width="241" height="12">La petite souris boit un petit thé sous ce grand lit</text>
+<text top="160" left="62" width="278" height="13">eitipmfatekikoeentermasmolablakelaimjuomeloekaSenoson</text>
+<text top="160" left="32" width="19" height="12">(88)</text>
+<text top="174" left="62" width="365" height="12">Les gros chasseurs mangeaient une petite autruche noire sur des coussins</text>
+<text top="193" left="62" width="277" height="13">ilgetabmasmolekekoekaSenosbigiseukohusainikoenersmwiz</text>
+<text top="193" left="32" width="19" height="12">(89)</text>
+<text top="207" left="62" width="355" height="12">Les petits coussins arrivaient dans la grande maison avec les infirmières</text>
+<text top="225" left="62" width="251" height="13">eslipimfatekikoeentermbigisekblakisekukoetabelaund</text>
+<text top="226" left="32" width="19" height="12">(90)</text>
+<text top="240" left="62" width="286" height="12">Les gros chasseurs dorment sous les grandes tables noires</text>
+<text top="258" left="62" width="237" height="13">eslipibmtuekiloeentermeloekaSenosonukokiSenafes</text>
+<text top="259" left="32" width="19" height="12">(91)</text>
+<text top="273" left="62" width="301" height="12">Deux chasseurs dormaient sur des coussins devant la cuisine</text>
+<text top="291" left="62" width="224" height="13">ienteraekodingoosekitawnogovjeloiseukohusain</text>
+<text top="291" left="32" width="19" height="12">(92)</text>
+<text top="306" left="62" width="233" height="12">Le coyote entre dans la maison jaune du village</text>
+<text top="324" left="62" width="267" height="13">egivibmikoeentermajelokelaebananomoabigkekeeimjuon</text>
+<text top="324" left="32" width="19" height="12">(93)</text>
+<text top="339" left="62" width="320" height="12">Les chasseurs donnaient des fruits jaunes aux grandes autruches</text>
+<text top="357" left="62" width="200" height="13">ildrikamatuekekoeimjuostukbigkibaekofim</text>
+<text top="357" left="32" width="19" height="12">(94)</text>
+<text top="372" left="62" width="245" height="12">Les deux autruches boivent ces deux grands cafés</text>
+<text top="390" left="62" width="232" height="13">ilgivamatuekeloeimjuosilaegmoalinkebeedingoon</text>
+<text top="390" left="32" width="19" height="12">(95)</text>
+<text top="404" left="62" width="272" height="12">Deux autruches donnent un oeuf à ces coyotes maigres</text>
+<text top="423" left="62" width="109" height="13">safoliiloegmekobedosin</text>
+<text top="423" left="32" width="19" height="12">(96)</text>
+<text top="437" left="62" width="124" height="12">Un oeuf tombe dans le lit</text>
+<text top="456" left="62" width="358" height="13">ilentafmatuekafatekeboemawsosulinikolagovukiegerlagovasmolkekaekatom</text>
+<text top="456" left="32" width="19" height="12">(97)</text>
+<text top="470" left="62" width="331" height="12">Ces deux grosses souris chassent les petits chats des filles de Nicole</text>
+<text top="488" left="62" width="228" height="13">ilentafmatuekekoedingooselaeimjuomikovalimin</text>
+<text top="489" left="32" width="19" height="12">(98)</text>
+<text top="503" left="62" width="272" height="12">Les deux coyotes chassent des autruches dans la plaine</text>
+<text top="521" left="62" width="171" height="13">efolimblakekikoetimekoekaSenosund</text>
+<text top="522" left="32" width="19" height="12">(99)</text>
+<text top="536" left="62" width="199" height="12">Les thés noirs tombent sous les coussins</text>
+<text top="554" left="62" width="354" height="13">ilentafmatuekajeloekekoekatosukihusagovekaemawsomsmoliseukokiSenain</text>
+<text top="554" left="26" width="25" height="12">(100)</text>
+<text top="569" left="62" width="375" height="12">Les deux chats jaunes chassent les souris de la maison dans la petite cuisine</text>
+<text top="587" left="62" width="177" height="13">eoferimikoenersmelabedomulekatiSan</text>
+<text top="587" left="26" width="25" height="12">(101)</text>
+<text top="602" left="62" width="186" height="12">Les infirmières offrent un lit à Katisha</text>
+<text top="620" left="62" width="171" height="13">eslipimiboenersmbigisekukoerumain</text>
+<text top="620" left="26" width="25" height="12">(102)</text>
+<text top="635" left="62" width="256" height="12">Ces infirmières dorment dans les grandes chambres</text>
+<text top="653" left="62" width="230" height="13">ilslipabmeloedingoositukikienersgovukorumaund</text>
+<text top="653" left="26" width="25" height="12">(103)</text>
+<text top="668" left="62" width="300" height="12">Des coyotes dormaient sous la chambre des deux infirmières</text>
+<text top="686" left="62" width="221" height="13">egiveulokatiSaafrikebaekatomotuiskubeegerlan</text>
+<text top="686" left="26" width="25" height="12">(104)</text>
+<text top="700" left="62" width="222" height="12">Katisha donne ces trois chats à ces deux filles</text>
+<text top="719" left="62" width="177" height="13">elberefmtuisekuboetabelaukaegerlam</text>
+<text top="719" left="26" width="25" height="12">(105)</text>
+<text top="733" left="62" width="176" height="12">Ces deux tables supportent les filles</text>
+<text top="751" left="62" width="242" height="13">egetebulonikolaukorumainatuekafatekeloekatoswiz</text>
+<text top="752" left="26" width="25" height="12">(106)</text>
+<text top="766" left="62" width="258" height="12">Nicole arrivait dans la chambre avec deux gros chats</text>
+<text top="803" left="294" width="5" height="12">5</text>
+</page>
+<page number="6" width="595.276" height="841.89">
+<text top="61" left="62" width="167" height="13">elbajemuloegerlaalinablakelakatom</text>
+<text top="61" left="26" width="25" height="12">(107)</text>
+<text top="76" left="62" width="190" height="12">Des filles achètent un maigre chat noir</text>
+<text top="94" left="62" width="333" height="13">saSoibbigeiloentermasmoleladingoomelenabilonukokiSenafesikovalimin</text>
+<text top="94" left="26" width="25" height="12">(108)</text>
+<text top="109" left="62" width="411" height="12">Un grand chasseur montrait un petit coyote à Nabil dans la plaine devant la cuisine</text>
+<text top="127" left="62" width="318" height="13">ilslipamatuekafatekeloekatosibigisukirumagovsmoliseukotabelaund</text>
+<text top="127" left="26" width="25" height="12">(109)</text>
+<text top="141" left="62" width="329" height="12">Deux gros chats dorment sous la petite table de la grande chambre</text>
+<text top="160" left="62" width="173" height="13">ilgetafmatuekeboebananosikivaligov</text>
+<text top="160" left="26" width="25" height="12">(110)</text>
+<text top="174" left="62" width="174" height="12">Ces deux fruits arrivent de la plaine</text>
+<text top="193" left="62" width="147" height="13">eberifmtuekiloeegmebaimjuom</text>
+<text top="193" left="26" width="25" height="12">(111)</text>
+<text top="207" left="62" width="187" height="12">Deux oeufs supportent cette autruche</text>
+<text top="225" left="62" width="137" height="13">igetafekokaSenosekobedoson</text>
+<text top="226" left="26" width="25" height="12">(112)</text>
+<text top="240" left="62" width="125" height="12">Le coussin arrive sur le lit</text>
+<text top="258" left="62" width="235" height="13">idrikaasmoleawajteeloimjuosblakilatimukohusafes</text>
+<text top="259" left="26" width="25" height="12">(113)</text>
+<text top="273" left="62" width="309" height="12">Une petite autruche blanche boit un thé noir devant la maison</text>
+<text top="291" left="62" width="176" height="13">ilberafmekoebedostukfatkikaeenterm</text>
+<text top="291" left="26" width="25" height="12">(114)</text>
+<text top="306" left="62" width="209" height="12">Les lits supportent les deux gros chasseurs</text>
+<text top="324" left="62" width="169" height="13">iberafafateeloimjuosasmolelabojom</text>
+<text top="324" left="26" width="25" height="12">(115)</text>
+<text top="339" left="62" width="227" height="12">Une grosse autruche supporte un petit garçon</text>
+<text top="357" left="62" width="216" height="13">iloferamatuekeboebojosulatabelamikeeentern</text>
+<text top="357" left="26" width="25" height="12">(116)</text>
+<text top="372" left="62" width="242" height="12">Ces deux garçons offrent une table aux chasseurs</text>
+<text top="390" left="62" width="358" height="13">efroifmikoenersmebiedingoogovikamitmulekatiSanukikiSenagovukotabelaon</text>
+<text top="390" left="26" width="25" height="12">(117)</text>
+<text top="404" left="62" width="402" height="12">Les infirmières lancent la viande de ces coyotes à Katisha sur la table de la cuisine</text>
+<text top="423" left="62" width="347" height="13">ilgivabmafriekalinekekoeimjuoswajtkilaeegmafatekablakekekoekaSenoson</text>
+<text top="423" left="26" width="25" height="12">(118)</text>
+<text top="437" left="62" width="404" height="12">Les trois maigres autruches donnaient des oeufs blancs sur les gros coussins noirs</text>
+<text top="456" left="62" width="212" height="13">edrikimtuekiboenersmilakofimikoeentermwiz</text>
+<text top="456" left="26" width="25" height="12">(119)</text>
+<text top="470" left="62" width="272" height="12">Ces deux infirmières boivent un café avec les chasseurs</text>
+<text top="488" left="62" width="238" height="13">efroefsmoliseulogerlatukilaemitmoafatekedingoon</text>
+<text top="489" left="26" width="25" height="12">(120)</text>
+<text top="503" left="62" width="243" height="12">Une petite fille lance deux viandes au gros coyote</text>
+<text top="531" left="26" width="541" height="12">Votre mission : Votre collègue a remarqué qu’il y a des variations de forme pour la plupart des catégories mais</text>
+<text top="545" left="56" width="398" height="12">il n’a pas noté les paramètres qui régissent ces variations. Complétez son travail :</text>
+<text top="572" left="41" width="531" height="12">1. Décrivez les phénomènes d’accord rencontrés dans le corpus et les gloses nécessaires pour rendre compte</text>
+<text top="587" left="56" width="100" height="12">de ces phénomènes.</text>
+<text top="611" left="41" width="313" height="12">2. Décrivez l’organisation générale de la phrase dans ce kalaba.</text>
+<text top="626" left="56" width="512" height="12">Pour chaque type de constituant, donnez l’ordre d’apparition des catégories par comparaison à celui du</text>
+<text top="640" left="56" width="316" height="12">français indiqué ci-dessous sans tenir compte de l’optionnalité :</text>
+<text top="656" left="67" width="66" height="12">(1) Français</text>
+<text top="656" left="328" width="58" height="12">(2) Kalaba</text>
+<text top="673" left="354" width="104" height="22">a. Phrase −→ ... ... ...</text>
+<text top="673" left="93" width="123" height="22">a. Phrase −→ GN GV GP</text>
+<text top="690" left="354" width="86" height="22">b. GV −→ ... ... ...</text>
+<text top="690" left="93" width="97" height="22">b. GV −→ V GN GP</text>
+<text top="707" left="355" width="99" height="22">c. GN −→ ... ... ... ...</text>
+<text top="708" left="94" width="120" height="22">c. GN −→ Dét N Adj GP</text>
+<text top="725" left="354" width="74" height="22">d. GP −→ ... ...</text>
+<text top="725" left="92" width="96" height="22">d. GP −→ Prép GN</text>
+<text top="803" left="294" width="5" height="12">6</text>
+</page>
+</pdf2xml>
