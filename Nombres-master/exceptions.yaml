@@ -1,0 +1,142 @@
+français:
+  0:
+    graphie: zéro
+    phonologie: zeRo
+  1:
+    graphie: un
+    phonologie: '1'
+  2:
+    graphie: deux
+    phonologie: d2
+  3:
+    graphie: trois
+    phonologie: tRwa
+  4:
+    graphie: quatre
+    phonologie: katR
+  5:
+    graphie: cinq
+    phonologie: s5k
+  6:
+    graphie: six
+    phonologie: sis
+  7:
+    graphie: sept
+    phonologie: sEt
+  8:
+    graphie: huit
+    phonologie: 8it
+  9:
+    graphie: neuf
+    phonologie: n9f
+  10:
+    graphie: dix
+    phonologie: dis
+  11:
+    graphie: onze
+    phonologie: §z
+  12:
+    graphie: douze
+    phonologie: duz
+  13:
+    graphie: treize
+    phonologie: tREz
+  14:
+    graphie: quatorze
+    phonologie: katORz
+  15:
+    graphie: quinze
+    phonologie: k5z
+  16:
+    graphie: seize
+    phonologie: sEz
+  20:
+    graphie: vingt
+    phonologie: v5
+  30:
+    graphie: trente
+    phonologie: tR@t
+  40:
+    graphie: quarante
+    phonologie: kaR@t
+  50:
+    graphie: cinquante
+    phonologie: s5k@t
+  60:
+    graphie: soixante
+    phonologie: swas@t
+  70:
+    graphie: soixante-dix
+    phonologie: swas@tdis
+  71:
+    graphie: soixante-et-onze
+    phonologie: swas@te§z
+  72:
+    graphie: soixante-douze
+    phonologie: swas@tduz
+  73:
+    graphie: soixante-treize
+    phonologie: swas@ttREz
+  74:
+    graphie: soixante-quatorze
+    phonologie: swas@tkatORz
+  75:
+    graphie: soixante-quinze
+    phonologie: swas@tk5z
+  76:
+    graphie: soixante-seize
+    phonologie: swas@tsEz
+  77:
+    graphie: soixante-dix-sept
+    phonologie: swas@tdisEt
+  78:
+    graphie: soixante-dix-huit
+    phonologie: swas@tdiz8it
+  79:
+    graphie: soixante-dix-neuf
+    phonologie: swas@tdizn9f
+  80:
+    graphie: quatre-vingt
+    phonologie: katR°v5
+  90:
+    graphie: quatre-vingt-dix
+    phonologie: katR°v5dis
+  91:
+    graphie: quatre-vingt-onze
+    phonologie: katR°v5§z
+  92:
+    graphie: quatre-vingt-douze
+    phonologie: katR°v5duz
+  93:
+    graphie: quatre-vingt-treize
+    phonologie: katR°v5tREz
+  94:
+    graphie: quatre-vingt-quatorze
+    phonologie: katR°v5katORz
+  95:
+    graphie: quatre-vingt-quinze
+    phonologie: katR°v5k5z
+  96:
+    graphie: quatre-vingt-seize
+    phonologie: katR°v5sEz
+  97:
+    graphie: quatre-vingt-dix-sept
+    phonologie: katR°v5disEt
+  98:
+    graphie: quatre-vingt-dix-huit
+    phonologie: katR°v5diz8it
+  99:
+    graphie: quatre-vingt-dix-neuf
+    phonologie: katR°v5dizn9f
+  100:
+    graphie: cent
+    phonologie: s@
+  1000:
+    graphie: mille
+    phonologie: mil
+  1000000:
+    graphie: million
+    phonologie: milj§
+  1000000000:
+    graphie: milliard
+    phonologie: miljaR
