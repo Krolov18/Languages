@@ -1,0 +1,1332 @@
+Created by PLY version 3.8 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> M
+Rule 1     M -> K
+Rule 2     M -> K GPHRASES
+Rule 3     K -> R
+Rule 4     K -> R TS
+Rule 5     GPHRASE -> PHRASE K
+Rule 6     GPHRASES -> GPHRASE GPHRASES
+Rule 7     GPHRASES -> GPHRASE
+Rule 8     R -> LEMME POLYP
+Rule 9     R -> LEMME INHERP
+Rule 10    R -> POLYP
+Rule 11    R -> DPTRAIT LEMME
+Rule 12    GPTRAIT -> PORTMA TRAIT
+Rule 13    GPTRAITS -> GPTRAIT GPTRAITS
+Rule 14    GPTRAITS -> GPTRAIT
+Rule 15    DPTRAIT -> TRAIT PORTMA
+Rule 16    POLYP -> RT
+Rule 17    POLYP -> RT POLYS
+Rule 18    RT -> TRAIT
+Rule 19    RT -> TRAIT GPTRAITS
+Rule 20    RT -> GPTRAITS
+Rule 21    POLY -> POLYSE RT
+Rule 22    POLYS -> POLY POLYS
+Rule 23    POLYS -> POLY
+Rule 24    INHERP -> GINHER POLYP DINHER
+Rule 25    MORPH0 -> GMORPH0 POLYP DMORPH0
+Rule 26    INFIX -> GINFIX POLYP DINFIX
+Rule 27    T -> REDUPL POLYP
+Rule 28    T -> POLYP REDUPL
+Rule 29    T -> ABLAUT POLYP
+Rule 30    T -> POLYP ABLAUT
+Rule 31    T -> CLITIC POLYP
+Rule 32    T -> POLYP CLITIC
+Rule 33    T -> UNSPEC POLYP
+Rule 34    T -> POLYP UNSPEC
+Rule 35    T -> AFFIX POLYP
+Rule 36    T -> POLYP AFFIX
+Rule 37    T -> POLYP CIRCONF2
+Rule 38    T -> INFIX
+Rule 39    T -> MORPH0
+Rule 40    RT -> POLYP CIRCONF1
+Rule 41    TS -> T TS
+Rule 42    TS -> T
+
+Terminals, with rules where they appear
+
+ABLAUT               : 29 30
+AFFIX                : 35 36
+CIRCONF1             : 40
+CIRCONF2             : 37
+CLITIC               : 31 32
+DINFIX               : 26
+DINHER               : 24
+DMORPH0              : 25
+GINFIX               : 26
+GINHER               : 24
+GMORPH0              : 25
+LEMME                : 8 9 11
+PHRASE               : 5
+POLYSE               : 21
+PORTMA               : 12 15
+REDUPL               : 27 28
+TRAIT                : 12 15 18 19
+UNSPEC               : 33 34
+error                : 
+
+Nonterminals, with rules where they appear
+
+DPTRAIT              : 11
+GPHRASE              : 6 7
+GPHRASES             : 2 6
+GPTRAIT              : 13 14
+GPTRAITS             : 13 19 20
+INFIX                : 38
+INHERP               : 9
+K                    : 1 2 5
+M                    : 0
+MORPH0               : 39
+POLY                 : 22 23
+POLYP                : 8 10 24 25 26 27 28 29 30 31 32 33 34 35 36 37 40
+POLYS                : 17 22
+R                    : 3 4
+RT                   : 16 17 21
+T                    : 41 42
+TS                   : 4 41
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . M
+    (1) M -> . K
+    (2) M -> . K GPHRASES
+    (3) K -> . R
+    (4) K -> . R TS
+    (8) R -> . LEMME POLYP
+    (9) R -> . LEMME INHERP
+    (10) R -> . POLYP
+    (11) R -> . DPTRAIT LEMME
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (15) DPTRAIT -> . TRAIT PORTMA
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    LEMME           shift and go to state 2
+    TRAIT           shift and go to state 10
+    PORTMA          shift and go to state 9
+
+    DPTRAIT                        shift and go to state 1
+    RT                             shift and go to state 3
+    R                              shift and go to state 4
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    K                              shift and go to state 7
+    POLYP                          shift and go to state 5
+    M                              shift and go to state 8
+
+state 1
+
+    (11) R -> DPTRAIT . LEMME
+
+    LEMME           shift and go to state 12
+
+
+state 2
+
+    (8) R -> LEMME . POLYP
+    (9) R -> LEMME . INHERP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (24) INHERP -> . GINHER POLYP DINHER
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    GINHER          shift and go to state 16
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 13
+    GPTRAITS                       shift and go to state 11
+    INHERP                         shift and go to state 14
+    RT                             shift and go to state 3
+    GPTRAIT                        shift and go to state 6
+
+state 3
+
+    (16) POLYP -> RT .
+    (17) POLYP -> RT . POLYS
+    (22) POLYS -> . POLY POLYS
+    (23) POLYS -> . POLY
+    (21) POLY -> . POLYSE RT
+
+    DINHER          reduce using rule 16 (POLYP -> RT .)
+    CIRCONF1        reduce using rule 16 (POLYP -> RT .)
+    REDUPL          reduce using rule 16 (POLYP -> RT .)
+    ABLAUT          reduce using rule 16 (POLYP -> RT .)
+    CLITIC          reduce using rule 16 (POLYP -> RT .)
+    UNSPEC          reduce using rule 16 (POLYP -> RT .)
+    AFFIX           reduce using rule 16 (POLYP -> RT .)
+    GINFIX          reduce using rule 16 (POLYP -> RT .)
+    GMORPH0         reduce using rule 16 (POLYP -> RT .)
+    TRAIT           reduce using rule 16 (POLYP -> RT .)
+    PORTMA          reduce using rule 16 (POLYP -> RT .)
+    PHRASE          reduce using rule 16 (POLYP -> RT .)
+    $end            reduce using rule 16 (POLYP -> RT .)
+    DMORPH0         reduce using rule 16 (POLYP -> RT .)
+    DINFIX          reduce using rule 16 (POLYP -> RT .)
+    CIRCONF2        reduce using rule 16 (POLYP -> RT .)
+    POLYSE          shift and go to state 19
+
+    POLY                           shift and go to state 17
+    POLYS                          shift and go to state 18
+
+state 4
+
+    (3) K -> R .
+    (4) K -> R . TS
+    (41) TS -> . T TS
+    (42) TS -> . T
+    (27) T -> . REDUPL POLYP
+    (28) T -> . POLYP REDUPL
+    (29) T -> . ABLAUT POLYP
+    (30) T -> . POLYP ABLAUT
+    (31) T -> . CLITIC POLYP
+    (32) T -> . POLYP CLITIC
+    (33) T -> . UNSPEC POLYP
+    (34) T -> . POLYP UNSPEC
+    (35) T -> . AFFIX POLYP
+    (36) T -> . POLYP AFFIX
+    (37) T -> . POLYP CIRCONF2
+    (38) T -> . INFIX
+    (39) T -> . MORPH0
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (26) INFIX -> . GINFIX POLYP DINFIX
+    (25) MORPH0 -> . GMORPH0 POLYP DMORPH0
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    PHRASE          reduce using rule 3 (K -> R .)
+    $end            reduce using rule 3 (K -> R .)
+    REDUPL          shift and go to state 26
+    ABLAUT          shift and go to state 24
+    CLITIC          shift and go to state 21
+    UNSPEC          shift and go to state 23
+    AFFIX           shift and go to state 25
+    GINFIX          shift and go to state 30
+    GMORPH0         shift and go to state 22
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    TS                             shift and go to state 20
+    RT                             shift and go to state 3
+    INFIX                          shift and go to state 28
+    MORPH0                         shift and go to state 31
+    GPTRAITS                       shift and go to state 11
+    POLYP                          shift and go to state 27
+    GPTRAIT                        shift and go to state 6
+    T                              shift and go to state 29
+
+state 5
+
+    (10) R -> POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 10 (R -> POLYP .)
+    ABLAUT          reduce using rule 10 (R -> POLYP .)
+    CLITIC          reduce using rule 10 (R -> POLYP .)
+    UNSPEC          reduce using rule 10 (R -> POLYP .)
+    AFFIX           reduce using rule 10 (R -> POLYP .)
+    GINFIX          reduce using rule 10 (R -> POLYP .)
+    GMORPH0         reduce using rule 10 (R -> POLYP .)
+    TRAIT           reduce using rule 10 (R -> POLYP .)
+    PORTMA          reduce using rule 10 (R -> POLYP .)
+    PHRASE          reduce using rule 10 (R -> POLYP .)
+    $end            reduce using rule 10 (R -> POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 6
+
+    (13) GPTRAITS -> GPTRAIT . GPTRAITS
+    (14) GPTRAITS -> GPTRAIT .
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+  ! shift/reduce conflict for PORTMA resolved as shift
+    POLYSE          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    CIRCONF1        reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    REDUPL          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    ABLAUT          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    CLITIC          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    UNSPEC          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    AFFIX           reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    GINFIX          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    GMORPH0         reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    TRAIT           reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    PHRASE          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    $end            reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    CIRCONF2        reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    DINHER          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    DMORPH0         reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    DINFIX          reduce using rule 14 (GPTRAITS -> GPTRAIT .)
+    PORTMA          shift and go to state 9
+
+  ! PORTMA          [ reduce using rule 14 (GPTRAITS -> GPTRAIT .) ]
+
+    GPTRAITS                       shift and go to state 33
+    GPTRAIT                        shift and go to state 6
+
+state 7
+
+    (1) M -> K .
+    (2) M -> K . GPHRASES
+    (6) GPHRASES -> . GPHRASE GPHRASES
+    (7) GPHRASES -> . GPHRASE
+    (5) GPHRASE -> . PHRASE K
+
+    $end            reduce using rule 1 (M -> K .)
+    PHRASE          shift and go to state 36
+
+    GPHRASE                        shift and go to state 34
+    GPHRASES                       shift and go to state 35
+
+state 8
+
+    (0) S' -> M .
+
+
+
+state 9
+
+    (12) GPTRAIT -> PORTMA . TRAIT
+
+    TRAIT           shift and go to state 37
+
+
+state 10
+
+    (15) DPTRAIT -> TRAIT . PORTMA
+    (18) RT -> TRAIT .
+    (19) RT -> TRAIT . GPTRAITS
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+  ! shift/reduce conflict for PORTMA resolved as shift
+    PORTMA          shift and go to state 39
+    POLYSE          reduce using rule 18 (RT -> TRAIT .)
+    CIRCONF1        reduce using rule 18 (RT -> TRAIT .)
+    REDUPL          reduce using rule 18 (RT -> TRAIT .)
+    ABLAUT          reduce using rule 18 (RT -> TRAIT .)
+    CLITIC          reduce using rule 18 (RT -> TRAIT .)
+    UNSPEC          reduce using rule 18 (RT -> TRAIT .)
+    AFFIX           reduce using rule 18 (RT -> TRAIT .)
+    GINFIX          reduce using rule 18 (RT -> TRAIT .)
+    GMORPH0         reduce using rule 18 (RT -> TRAIT .)
+    TRAIT           reduce using rule 18 (RT -> TRAIT .)
+    PHRASE          reduce using rule 18 (RT -> TRAIT .)
+    $end            reduce using rule 18 (RT -> TRAIT .)
+
+  ! PORTMA          [ reduce using rule 18 (RT -> TRAIT .) ]
+
+    GPTRAITS                       shift and go to state 38
+    GPTRAIT                        shift and go to state 6
+
+state 11
+
+    (20) RT -> GPTRAITS .
+
+    POLYSE          reduce using rule 20 (RT -> GPTRAITS .)
+    CIRCONF1        reduce using rule 20 (RT -> GPTRAITS .)
+    REDUPL          reduce using rule 20 (RT -> GPTRAITS .)
+    ABLAUT          reduce using rule 20 (RT -> GPTRAITS .)
+    CLITIC          reduce using rule 20 (RT -> GPTRAITS .)
+    UNSPEC          reduce using rule 20 (RT -> GPTRAITS .)
+    AFFIX           reduce using rule 20 (RT -> GPTRAITS .)
+    GINFIX          reduce using rule 20 (RT -> GPTRAITS .)
+    GMORPH0         reduce using rule 20 (RT -> GPTRAITS .)
+    TRAIT           reduce using rule 20 (RT -> GPTRAITS .)
+    PORTMA          reduce using rule 20 (RT -> GPTRAITS .)
+    PHRASE          reduce using rule 20 (RT -> GPTRAITS .)
+    $end            reduce using rule 20 (RT -> GPTRAITS .)
+    CIRCONF2        reduce using rule 20 (RT -> GPTRAITS .)
+    DINHER          reduce using rule 20 (RT -> GPTRAITS .)
+    DMORPH0         reduce using rule 20 (RT -> GPTRAITS .)
+    DINFIX          reduce using rule 20 (RT -> GPTRAITS .)
+
+
+state 12
+
+    (11) R -> DPTRAIT LEMME .
+
+    REDUPL          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    ABLAUT          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    CLITIC          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    UNSPEC          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    AFFIX           reduce using rule 11 (R -> DPTRAIT LEMME .)
+    GINFIX          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    GMORPH0         reduce using rule 11 (R -> DPTRAIT LEMME .)
+    TRAIT           reduce using rule 11 (R -> DPTRAIT LEMME .)
+    PORTMA          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    PHRASE          reduce using rule 11 (R -> DPTRAIT LEMME .)
+    $end            reduce using rule 11 (R -> DPTRAIT LEMME .)
+
+
+state 13
+
+    (8) R -> LEMME POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 8 (R -> LEMME POLYP .)
+    ABLAUT          reduce using rule 8 (R -> LEMME POLYP .)
+    CLITIC          reduce using rule 8 (R -> LEMME POLYP .)
+    UNSPEC          reduce using rule 8 (R -> LEMME POLYP .)
+    AFFIX           reduce using rule 8 (R -> LEMME POLYP .)
+    GINFIX          reduce using rule 8 (R -> LEMME POLYP .)
+    GMORPH0         reduce using rule 8 (R -> LEMME POLYP .)
+    TRAIT           reduce using rule 8 (R -> LEMME POLYP .)
+    PORTMA          reduce using rule 8 (R -> LEMME POLYP .)
+    PHRASE          reduce using rule 8 (R -> LEMME POLYP .)
+    $end            reduce using rule 8 (R -> LEMME POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 14
+
+    (9) R -> LEMME INHERP .
+
+    REDUPL          reduce using rule 9 (R -> LEMME INHERP .)
+    ABLAUT          reduce using rule 9 (R -> LEMME INHERP .)
+    CLITIC          reduce using rule 9 (R -> LEMME INHERP .)
+    UNSPEC          reduce using rule 9 (R -> LEMME INHERP .)
+    AFFIX           reduce using rule 9 (R -> LEMME INHERP .)
+    GINFIX          reduce using rule 9 (R -> LEMME INHERP .)
+    GMORPH0         reduce using rule 9 (R -> LEMME INHERP .)
+    TRAIT           reduce using rule 9 (R -> LEMME INHERP .)
+    PORTMA          reduce using rule 9 (R -> LEMME INHERP .)
+    PHRASE          reduce using rule 9 (R -> LEMME INHERP .)
+    $end            reduce using rule 9 (R -> LEMME INHERP .)
+
+
+state 15
+
+    (18) RT -> TRAIT .
+    (19) RT -> TRAIT . GPTRAITS
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+  ! shift/reduce conflict for PORTMA resolved as shift
+    POLYSE          reduce using rule 18 (RT -> TRAIT .)
+    CIRCONF1        reduce using rule 18 (RT -> TRAIT .)
+    REDUPL          reduce using rule 18 (RT -> TRAIT .)
+    ABLAUT          reduce using rule 18 (RT -> TRAIT .)
+    CLITIC          reduce using rule 18 (RT -> TRAIT .)
+    UNSPEC          reduce using rule 18 (RT -> TRAIT .)
+    AFFIX           reduce using rule 18 (RT -> TRAIT .)
+    GINFIX          reduce using rule 18 (RT -> TRAIT .)
+    GMORPH0         reduce using rule 18 (RT -> TRAIT .)
+    TRAIT           reduce using rule 18 (RT -> TRAIT .)
+    PHRASE          reduce using rule 18 (RT -> TRAIT .)
+    $end            reduce using rule 18 (RT -> TRAIT .)
+    CIRCONF2        reduce using rule 18 (RT -> TRAIT .)
+    DINHER          reduce using rule 18 (RT -> TRAIT .)
+    DMORPH0         reduce using rule 18 (RT -> TRAIT .)
+    DINFIX          reduce using rule 18 (RT -> TRAIT .)
+    PORTMA          shift and go to state 9
+
+  ! PORTMA          [ reduce using rule 18 (RT -> TRAIT .) ]
+
+    GPTRAITS                       shift and go to state 38
+    GPTRAIT                        shift and go to state 6
+
+state 16
+
+    (24) INHERP -> GINHER . POLYP DINHER
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 40
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 17
+
+    (22) POLYS -> POLY . POLYS
+    (23) POLYS -> POLY .
+    (22) POLYS -> . POLY POLYS
+    (23) POLYS -> . POLY
+    (21) POLY -> . POLYSE RT
+
+    CIRCONF1        reduce using rule 23 (POLYS -> POLY .)
+    REDUPL          reduce using rule 23 (POLYS -> POLY .)
+    ABLAUT          reduce using rule 23 (POLYS -> POLY .)
+    CLITIC          reduce using rule 23 (POLYS -> POLY .)
+    UNSPEC          reduce using rule 23 (POLYS -> POLY .)
+    AFFIX           reduce using rule 23 (POLYS -> POLY .)
+    GINFIX          reduce using rule 23 (POLYS -> POLY .)
+    GMORPH0         reduce using rule 23 (POLYS -> POLY .)
+    TRAIT           reduce using rule 23 (POLYS -> POLY .)
+    PORTMA          reduce using rule 23 (POLYS -> POLY .)
+    PHRASE          reduce using rule 23 (POLYS -> POLY .)
+    $end            reduce using rule 23 (POLYS -> POLY .)
+    CIRCONF2        reduce using rule 23 (POLYS -> POLY .)
+    DINHER          reduce using rule 23 (POLYS -> POLY .)
+    DMORPH0         reduce using rule 23 (POLYS -> POLY .)
+    DINFIX          reduce using rule 23 (POLYS -> POLY .)
+    POLYSE          shift and go to state 19
+
+    POLY                           shift and go to state 17
+    POLYS                          shift and go to state 41
+
+state 18
+
+    (17) POLYP -> RT POLYS .
+
+    DINHER          reduce using rule 17 (POLYP -> RT POLYS .)
+    CIRCONF1        reduce using rule 17 (POLYP -> RT POLYS .)
+    REDUPL          reduce using rule 17 (POLYP -> RT POLYS .)
+    ABLAUT          reduce using rule 17 (POLYP -> RT POLYS .)
+    CLITIC          reduce using rule 17 (POLYP -> RT POLYS .)
+    UNSPEC          reduce using rule 17 (POLYP -> RT POLYS .)
+    AFFIX           reduce using rule 17 (POLYP -> RT POLYS .)
+    GINFIX          reduce using rule 17 (POLYP -> RT POLYS .)
+    GMORPH0         reduce using rule 17 (POLYP -> RT POLYS .)
+    TRAIT           reduce using rule 17 (POLYP -> RT POLYS .)
+    PORTMA          reduce using rule 17 (POLYP -> RT POLYS .)
+    PHRASE          reduce using rule 17 (POLYP -> RT POLYS .)
+    $end            reduce using rule 17 (POLYP -> RT POLYS .)
+    DMORPH0         reduce using rule 17 (POLYP -> RT POLYS .)
+    DINFIX          reduce using rule 17 (POLYP -> RT POLYS .)
+    CIRCONF2        reduce using rule 17 (POLYP -> RT POLYS .)
+
+
+state 19
+
+    (21) POLY -> POLYSE . RT
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 42
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 43
+
+state 20
+
+    (4) K -> R TS .
+
+    PHRASE          reduce using rule 4 (K -> R TS .)
+    $end            reduce using rule 4 (K -> R TS .)
+
+
+state 21
+
+    (31) T -> CLITIC . POLYP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 44
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 22
+
+    (25) MORPH0 -> GMORPH0 . POLYP DMORPH0
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 45
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 23
+
+    (33) T -> UNSPEC . POLYP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 46
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 24
+
+    (29) T -> ABLAUT . POLYP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 47
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 25
+
+    (35) T -> AFFIX . POLYP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 48
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 26
+
+    (27) T -> REDUPL . POLYP
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 49
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 27
+
+    (28) T -> POLYP . REDUPL
+    (30) T -> POLYP . ABLAUT
+    (32) T -> POLYP . CLITIC
+    (34) T -> POLYP . UNSPEC
+    (36) T -> POLYP . AFFIX
+    (37) T -> POLYP . CIRCONF2
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          shift and go to state 50
+    ABLAUT          shift and go to state 53
+    CLITIC          shift and go to state 51
+    UNSPEC          shift and go to state 55
+    AFFIX           shift and go to state 54
+    CIRCONF2        shift and go to state 52
+    CIRCONF1        shift and go to state 32
+
+
+state 28
+
+    (38) T -> INFIX .
+
+    REDUPL          reduce using rule 38 (T -> INFIX .)
+    ABLAUT          reduce using rule 38 (T -> INFIX .)
+    CLITIC          reduce using rule 38 (T -> INFIX .)
+    UNSPEC          reduce using rule 38 (T -> INFIX .)
+    AFFIX           reduce using rule 38 (T -> INFIX .)
+    GINFIX          reduce using rule 38 (T -> INFIX .)
+    GMORPH0         reduce using rule 38 (T -> INFIX .)
+    TRAIT           reduce using rule 38 (T -> INFIX .)
+    PORTMA          reduce using rule 38 (T -> INFIX .)
+    PHRASE          reduce using rule 38 (T -> INFIX .)
+    $end            reduce using rule 38 (T -> INFIX .)
+
+
+state 29
+
+    (41) TS -> T . TS
+    (42) TS -> T .
+    (41) TS -> . T TS
+    (42) TS -> . T
+    (27) T -> . REDUPL POLYP
+    (28) T -> . POLYP REDUPL
+    (29) T -> . ABLAUT POLYP
+    (30) T -> . POLYP ABLAUT
+    (31) T -> . CLITIC POLYP
+    (32) T -> . POLYP CLITIC
+    (33) T -> . UNSPEC POLYP
+    (34) T -> . POLYP UNSPEC
+    (35) T -> . AFFIX POLYP
+    (36) T -> . POLYP AFFIX
+    (37) T -> . POLYP CIRCONF2
+    (38) T -> . INFIX
+    (39) T -> . MORPH0
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (26) INFIX -> . GINFIX POLYP DINFIX
+    (25) MORPH0 -> . GMORPH0 POLYP DMORPH0
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    PHRASE          reduce using rule 42 (TS -> T .)
+    $end            reduce using rule 42 (TS -> T .)
+    REDUPL          shift and go to state 26
+    ABLAUT          shift and go to state 24
+    CLITIC          shift and go to state 21
+    UNSPEC          shift and go to state 23
+    AFFIX           shift and go to state 25
+    GINFIX          shift and go to state 30
+    GMORPH0         shift and go to state 22
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    TS                             shift and go to state 56
+    RT                             shift and go to state 3
+    INFIX                          shift and go to state 28
+    T                              shift and go to state 29
+    GPTRAITS                       shift and go to state 11
+    POLYP                          shift and go to state 27
+    GPTRAIT                        shift and go to state 6
+    MORPH0                         shift and go to state 31
+
+state 30
+
+    (26) INFIX -> GINFIX . POLYP DINFIX
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    TRAIT           shift and go to state 15
+    PORTMA          shift and go to state 9
+
+    POLYP                          shift and go to state 57
+    GPTRAITS                       shift and go to state 11
+    GPTRAIT                        shift and go to state 6
+    RT                             shift and go to state 3
+
+state 31
+
+    (39) T -> MORPH0 .
+
+    REDUPL          reduce using rule 39 (T -> MORPH0 .)
+    ABLAUT          reduce using rule 39 (T -> MORPH0 .)
+    CLITIC          reduce using rule 39 (T -> MORPH0 .)
+    UNSPEC          reduce using rule 39 (T -> MORPH0 .)
+    AFFIX           reduce using rule 39 (T -> MORPH0 .)
+    GINFIX          reduce using rule 39 (T -> MORPH0 .)
+    GMORPH0         reduce using rule 39 (T -> MORPH0 .)
+    TRAIT           reduce using rule 39 (T -> MORPH0 .)
+    PORTMA          reduce using rule 39 (T -> MORPH0 .)
+    PHRASE          reduce using rule 39 (T -> MORPH0 .)
+    $end            reduce using rule 39 (T -> MORPH0 .)
+
+
+state 32
+
+    (40) RT -> POLYP CIRCONF1 .
+
+    POLYSE          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    CIRCONF1        reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    REDUPL          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    ABLAUT          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    CLITIC          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    UNSPEC          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    AFFIX           reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    GINFIX          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    GMORPH0         reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    TRAIT           reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    PORTMA          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    PHRASE          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    $end            reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    CIRCONF2        reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    DINHER          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    DMORPH0         reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+    DINFIX          reduce using rule 40 (RT -> POLYP CIRCONF1 .)
+
+
+state 33
+
+    (13) GPTRAITS -> GPTRAIT GPTRAITS .
+
+    POLYSE          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    CIRCONF1        reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    REDUPL          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    ABLAUT          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    CLITIC          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    UNSPEC          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    AFFIX           reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    GINFIX          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    GMORPH0         reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    TRAIT           reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    PORTMA          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    PHRASE          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    $end            reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    CIRCONF2        reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    DINHER          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    DMORPH0         reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+    DINFIX          reduce using rule 13 (GPTRAITS -> GPTRAIT GPTRAITS .)
+
+
+state 34
+
+    (6) GPHRASES -> GPHRASE . GPHRASES
+    (7) GPHRASES -> GPHRASE .
+    (6) GPHRASES -> . GPHRASE GPHRASES
+    (7) GPHRASES -> . GPHRASE
+    (5) GPHRASE -> . PHRASE K
+
+    $end            reduce using rule 7 (GPHRASES -> GPHRASE .)
+    PHRASE          shift and go to state 36
+
+    GPHRASE                        shift and go to state 34
+    GPHRASES                       shift and go to state 58
+
+state 35
+
+    (2) M -> K GPHRASES .
+
+    $end            reduce using rule 2 (M -> K GPHRASES .)
+
+
+state 36
+
+    (5) GPHRASE -> PHRASE . K
+    (3) K -> . R
+    (4) K -> . R TS
+    (8) R -> . LEMME POLYP
+    (9) R -> . LEMME INHERP
+    (10) R -> . POLYP
+    (11) R -> . DPTRAIT LEMME
+    (16) POLYP -> . RT
+    (17) POLYP -> . RT POLYS
+    (15) DPTRAIT -> . TRAIT PORTMA
+    (18) RT -> . TRAIT
+    (19) RT -> . TRAIT GPTRAITS
+    (20) RT -> . GPTRAITS
+    (40) RT -> . POLYP CIRCONF1
+    (13) GPTRAITS -> . GPTRAIT GPTRAITS
+    (14) GPTRAITS -> . GPTRAIT
+    (12) GPTRAIT -> . PORTMA TRAIT
+
+    LEMME           shift and go to state 2
+    TRAIT           shift and go to state 10
+    PORTMA          shift and go to state 9
+
+    DPTRAIT                        shift and go to state 1
+    K                              shift and go to state 59
+    RT                             shift and go to state 3
+    GPTRAITS                       shift and go to state 11
+    R                              shift and go to state 4
+    POLYP                          shift and go to state 5
+    GPTRAIT                        shift and go to state 6
+
+state 37
+
+    (12) GPTRAIT -> PORTMA TRAIT .
+
+    PORTMA          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    POLYSE          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    CIRCONF1        reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    REDUPL          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    ABLAUT          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    CLITIC          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    UNSPEC          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    AFFIX           reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    GINFIX          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    GMORPH0         reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    TRAIT           reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    PHRASE          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    $end            reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    CIRCONF2        reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    DINHER          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    DINFIX          reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+    DMORPH0         reduce using rule 12 (GPTRAIT -> PORTMA TRAIT .)
+
+
+state 38
+
+    (19) RT -> TRAIT GPTRAITS .
+
+    POLYSE          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    CIRCONF1        reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    REDUPL          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    ABLAUT          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    CLITIC          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    UNSPEC          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    AFFIX           reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    GINFIX          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    GMORPH0         reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    TRAIT           reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    PORTMA          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    PHRASE          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    $end            reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    CIRCONF2        reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    DINHER          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    DMORPH0         reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+    DINFIX          reduce using rule 19 (RT -> TRAIT GPTRAITS .)
+
+
+state 39
+
+    (15) DPTRAIT -> TRAIT PORTMA .
+    (12) GPTRAIT -> PORTMA . TRAIT
+
+    LEMME           reduce using rule 15 (DPTRAIT -> TRAIT PORTMA .)
+    TRAIT           shift and go to state 37
+
+
+state 40
+
+    (24) INHERP -> GINHER POLYP . DINHER
+    (40) RT -> POLYP . CIRCONF1
+
+    DINHER          shift and go to state 60
+    CIRCONF1        shift and go to state 32
+
+
+state 41
+
+    (22) POLYS -> POLY POLYS .
+
+    CIRCONF1        reduce using rule 22 (POLYS -> POLY POLYS .)
+    REDUPL          reduce using rule 22 (POLYS -> POLY POLYS .)
+    ABLAUT          reduce using rule 22 (POLYS -> POLY POLYS .)
+    CLITIC          reduce using rule 22 (POLYS -> POLY POLYS .)
+    UNSPEC          reduce using rule 22 (POLYS -> POLY POLYS .)
+    AFFIX           reduce using rule 22 (POLYS -> POLY POLYS .)
+    GINFIX          reduce using rule 22 (POLYS -> POLY POLYS .)
+    GMORPH0         reduce using rule 22 (POLYS -> POLY POLYS .)
+    TRAIT           reduce using rule 22 (POLYS -> POLY POLYS .)
+    PORTMA          reduce using rule 22 (POLYS -> POLY POLYS .)
+    PHRASE          reduce using rule 22 (POLYS -> POLY POLYS .)
+    $end            reduce using rule 22 (POLYS -> POLY POLYS .)
+    CIRCONF2        reduce using rule 22 (POLYS -> POLY POLYS .)
+    DINHER          reduce using rule 22 (POLYS -> POLY POLYS .)
+    DMORPH0         reduce using rule 22 (POLYS -> POLY POLYS .)
+    DINFIX          reduce using rule 22 (POLYS -> POLY POLYS .)
+
+
+state 42
+
+    (40) RT -> POLYP . CIRCONF1
+
+    CIRCONF1        shift and go to state 32
+
+
+state 43
+
+    (21) POLY -> POLYSE RT .
+    (16) POLYP -> RT .
+    (17) POLYP -> RT . POLYS
+    (22) POLYS -> . POLY POLYS
+    (23) POLYS -> . POLY
+    (21) POLY -> . POLYSE RT
+
+  ! reduce/reduce conflict for CIRCONF1 resolved using rule 16 (POLYP -> RT .)
+  ! shift/reduce conflict for POLYSE resolved as shift
+    REDUPL          reduce using rule 21 (POLY -> POLYSE RT .)
+    ABLAUT          reduce using rule 21 (POLY -> POLYSE RT .)
+    CLITIC          reduce using rule 21 (POLY -> POLYSE RT .)
+    UNSPEC          reduce using rule 21 (POLY -> POLYSE RT .)
+    AFFIX           reduce using rule 21 (POLY -> POLYSE RT .)
+    GINFIX          reduce using rule 21 (POLY -> POLYSE RT .)
+    GMORPH0         reduce using rule 21 (POLY -> POLYSE RT .)
+    TRAIT           reduce using rule 21 (POLY -> POLYSE RT .)
+    PORTMA          reduce using rule 21 (POLY -> POLYSE RT .)
+    PHRASE          reduce using rule 21 (POLY -> POLYSE RT .)
+    $end            reduce using rule 21 (POLY -> POLYSE RT .)
+    CIRCONF2        reduce using rule 21 (POLY -> POLYSE RT .)
+    DINHER          reduce using rule 21 (POLY -> POLYSE RT .)
+    DMORPH0         reduce using rule 21 (POLY -> POLYSE RT .)
+    DINFIX          reduce using rule 21 (POLY -> POLYSE RT .)
+    CIRCONF1        reduce using rule 16 (POLYP -> RT .)
+    POLYSE          shift and go to state 19
+
+  ! POLYSE          [ reduce using rule 21 (POLY -> POLYSE RT .) ]
+  ! CIRCONF1        [ reduce using rule 21 (POLY -> POLYSE RT .) ]
+
+    POLY                           shift and go to state 17
+    POLYS                          shift and go to state 18
+
+state 44
+
+    (31) T -> CLITIC POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 31 (T -> CLITIC POLYP .)
+    ABLAUT          reduce using rule 31 (T -> CLITIC POLYP .)
+    CLITIC          reduce using rule 31 (T -> CLITIC POLYP .)
+    UNSPEC          reduce using rule 31 (T -> CLITIC POLYP .)
+    AFFIX           reduce using rule 31 (T -> CLITIC POLYP .)
+    GINFIX          reduce using rule 31 (T -> CLITIC POLYP .)
+    GMORPH0         reduce using rule 31 (T -> CLITIC POLYP .)
+    TRAIT           reduce using rule 31 (T -> CLITIC POLYP .)
+    PORTMA          reduce using rule 31 (T -> CLITIC POLYP .)
+    PHRASE          reduce using rule 31 (T -> CLITIC POLYP .)
+    $end            reduce using rule 31 (T -> CLITIC POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 45
+
+    (25) MORPH0 -> GMORPH0 POLYP . DMORPH0
+    (40) RT -> POLYP . CIRCONF1
+
+    DMORPH0         shift and go to state 61
+    CIRCONF1        shift and go to state 32
+
+
+state 46
+
+    (33) T -> UNSPEC POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 33 (T -> UNSPEC POLYP .)
+    ABLAUT          reduce using rule 33 (T -> UNSPEC POLYP .)
+    CLITIC          reduce using rule 33 (T -> UNSPEC POLYP .)
+    UNSPEC          reduce using rule 33 (T -> UNSPEC POLYP .)
+    AFFIX           reduce using rule 33 (T -> UNSPEC POLYP .)
+    GINFIX          reduce using rule 33 (T -> UNSPEC POLYP .)
+    GMORPH0         reduce using rule 33 (T -> UNSPEC POLYP .)
+    TRAIT           reduce using rule 33 (T -> UNSPEC POLYP .)
+    PORTMA          reduce using rule 33 (T -> UNSPEC POLYP .)
+    PHRASE          reduce using rule 33 (T -> UNSPEC POLYP .)
+    $end            reduce using rule 33 (T -> UNSPEC POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 47
+
+    (29) T -> ABLAUT POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 29 (T -> ABLAUT POLYP .)
+    ABLAUT          reduce using rule 29 (T -> ABLAUT POLYP .)
+    CLITIC          reduce using rule 29 (T -> ABLAUT POLYP .)
+    UNSPEC          reduce using rule 29 (T -> ABLAUT POLYP .)
+    AFFIX           reduce using rule 29 (T -> ABLAUT POLYP .)
+    GINFIX          reduce using rule 29 (T -> ABLAUT POLYP .)
+    GMORPH0         reduce using rule 29 (T -> ABLAUT POLYP .)
+    TRAIT           reduce using rule 29 (T -> ABLAUT POLYP .)
+    PORTMA          reduce using rule 29 (T -> ABLAUT POLYP .)
+    PHRASE          reduce using rule 29 (T -> ABLAUT POLYP .)
+    $end            reduce using rule 29 (T -> ABLAUT POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 48
+
+    (35) T -> AFFIX POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 35 (T -> AFFIX POLYP .)
+    ABLAUT          reduce using rule 35 (T -> AFFIX POLYP .)
+    CLITIC          reduce using rule 35 (T -> AFFIX POLYP .)
+    UNSPEC          reduce using rule 35 (T -> AFFIX POLYP .)
+    AFFIX           reduce using rule 35 (T -> AFFIX POLYP .)
+    GINFIX          reduce using rule 35 (T -> AFFIX POLYP .)
+    GMORPH0         reduce using rule 35 (T -> AFFIX POLYP .)
+    TRAIT           reduce using rule 35 (T -> AFFIX POLYP .)
+    PORTMA          reduce using rule 35 (T -> AFFIX POLYP .)
+    PHRASE          reduce using rule 35 (T -> AFFIX POLYP .)
+    $end            reduce using rule 35 (T -> AFFIX POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 49
+
+    (27) T -> REDUPL POLYP .
+    (40) RT -> POLYP . CIRCONF1
+
+    REDUPL          reduce using rule 27 (T -> REDUPL POLYP .)
+    ABLAUT          reduce using rule 27 (T -> REDUPL POLYP .)
+    CLITIC          reduce using rule 27 (T -> REDUPL POLYP .)
+    UNSPEC          reduce using rule 27 (T -> REDUPL POLYP .)
+    AFFIX           reduce using rule 27 (T -> REDUPL POLYP .)
+    GINFIX          reduce using rule 27 (T -> REDUPL POLYP .)
+    GMORPH0         reduce using rule 27 (T -> REDUPL POLYP .)
+    TRAIT           reduce using rule 27 (T -> REDUPL POLYP .)
+    PORTMA          reduce using rule 27 (T -> REDUPL POLYP .)
+    PHRASE          reduce using rule 27 (T -> REDUPL POLYP .)
+    $end            reduce using rule 27 (T -> REDUPL POLYP .)
+    CIRCONF1        shift and go to state 32
+
+
+state 50
+
+    (28) T -> POLYP REDUPL .
+
+    REDUPL          reduce using rule 28 (T -> POLYP REDUPL .)
+    ABLAUT          reduce using rule 28 (T -> POLYP REDUPL .)
+    CLITIC          reduce using rule 28 (T -> POLYP REDUPL .)
+    UNSPEC          reduce using rule 28 (T -> POLYP REDUPL .)
+    AFFIX           reduce using rule 28 (T -> POLYP REDUPL .)
+    GINFIX          reduce using rule 28 (T -> POLYP REDUPL .)
+    GMORPH0         reduce using rule 28 (T -> POLYP REDUPL .)
+    TRAIT           reduce using rule 28 (T -> POLYP REDUPL .)
+    PORTMA          reduce using rule 28 (T -> POLYP REDUPL .)
+    PHRASE          reduce using rule 28 (T -> POLYP REDUPL .)
+    $end            reduce using rule 28 (T -> POLYP REDUPL .)
+
+
+state 51
+
+    (32) T -> POLYP CLITIC .
+
+    REDUPL          reduce using rule 32 (T -> POLYP CLITIC .)
+    ABLAUT          reduce using rule 32 (T -> POLYP CLITIC .)
+    CLITIC          reduce using rule 32 (T -> POLYP CLITIC .)
+    UNSPEC          reduce using rule 32 (T -> POLYP CLITIC .)
+    AFFIX           reduce using rule 32 (T -> POLYP CLITIC .)
+    GINFIX          reduce using rule 32 (T -> POLYP CLITIC .)
+    GMORPH0         reduce using rule 32 (T -> POLYP CLITIC .)
+    TRAIT           reduce using rule 32 (T -> POLYP CLITIC .)
+    PORTMA          reduce using rule 32 (T -> POLYP CLITIC .)
+    PHRASE          reduce using rule 32 (T -> POLYP CLITIC .)
+    $end            reduce using rule 32 (T -> POLYP CLITIC .)
+
+
+state 52
+
+    (37) T -> POLYP CIRCONF2 .
+
+    REDUPL          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    ABLAUT          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    CLITIC          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    UNSPEC          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    AFFIX           reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    GINFIX          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    GMORPH0         reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    TRAIT           reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    PORTMA          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    PHRASE          reduce using rule 37 (T -> POLYP CIRCONF2 .)
+    $end            reduce using rule 37 (T -> POLYP CIRCONF2 .)
+
+
+state 53
+
+    (30) T -> POLYP ABLAUT .
+
+    REDUPL          reduce using rule 30 (T -> POLYP ABLAUT .)
+    ABLAUT          reduce using rule 30 (T -> POLYP ABLAUT .)
+    CLITIC          reduce using rule 30 (T -> POLYP ABLAUT .)
+    UNSPEC          reduce using rule 30 (T -> POLYP ABLAUT .)
+    AFFIX           reduce using rule 30 (T -> POLYP ABLAUT .)
+    GINFIX          reduce using rule 30 (T -> POLYP ABLAUT .)
+    GMORPH0         reduce using rule 30 (T -> POLYP ABLAUT .)
+    TRAIT           reduce using rule 30 (T -> POLYP ABLAUT .)
+    PORTMA          reduce using rule 30 (T -> POLYP ABLAUT .)
+    PHRASE          reduce using rule 30 (T -> POLYP ABLAUT .)
+    $end            reduce using rule 30 (T -> POLYP ABLAUT .)
+
+
+state 54
+
+    (36) T -> POLYP AFFIX .
+
+    REDUPL          reduce using rule 36 (T -> POLYP AFFIX .)
+    ABLAUT          reduce using rule 36 (T -> POLYP AFFIX .)
+    CLITIC          reduce using rule 36 (T -> POLYP AFFIX .)
+    UNSPEC          reduce using rule 36 (T -> POLYP AFFIX .)
+    AFFIX           reduce using rule 36 (T -> POLYP AFFIX .)
+    GINFIX          reduce using rule 36 (T -> POLYP AFFIX .)
+    GMORPH0         reduce using rule 36 (T -> POLYP AFFIX .)
+    TRAIT           reduce using rule 36 (T -> POLYP AFFIX .)
+    PORTMA          reduce using rule 36 (T -> POLYP AFFIX .)
+    PHRASE          reduce using rule 36 (T -> POLYP AFFIX .)
+    $end            reduce using rule 36 (T -> POLYP AFFIX .)
+
+
+state 55
+
+    (34) T -> POLYP UNSPEC .
+
+    REDUPL          reduce using rule 34 (T -> POLYP UNSPEC .)
+    ABLAUT          reduce using rule 34 (T -> POLYP UNSPEC .)
+    CLITIC          reduce using rule 34 (T -> POLYP UNSPEC .)
+    UNSPEC          reduce using rule 34 (T -> POLYP UNSPEC .)
+    AFFIX           reduce using rule 34 (T -> POLYP UNSPEC .)
+    GINFIX          reduce using rule 34 (T -> POLYP UNSPEC .)
+    GMORPH0         reduce using rule 34 (T -> POLYP UNSPEC .)
+    TRAIT           reduce using rule 34 (T -> POLYP UNSPEC .)
+    PORTMA          reduce using rule 34 (T -> POLYP UNSPEC .)
+    PHRASE          reduce using rule 34 (T -> POLYP UNSPEC .)
+    $end            reduce using rule 34 (T -> POLYP UNSPEC .)
+
+
+state 56
+
+    (41) TS -> T TS .
+
+    PHRASE          reduce using rule 41 (TS -> T TS .)
+    $end            reduce using rule 41 (TS -> T TS .)
+
+
+state 57
+
+    (26) INFIX -> GINFIX POLYP . DINFIX
+    (40) RT -> POLYP . CIRCONF1
+
+    DINFIX          shift and go to state 62
+    CIRCONF1        shift and go to state 32
+
+
+state 58
+
+    (6) GPHRASES -> GPHRASE GPHRASES .
+
+    $end            reduce using rule 6 (GPHRASES -> GPHRASE GPHRASES .)
+
+
+state 59
+
+    (5) GPHRASE -> PHRASE K .
+
+    PHRASE          reduce using rule 5 (GPHRASE -> PHRASE K .)
+    $end            reduce using rule 5 (GPHRASE -> PHRASE K .)
+
+
+state 60
+
+    (24) INHERP -> GINHER POLYP DINHER .
+
+    REDUPL          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    ABLAUT          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    CLITIC          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    UNSPEC          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    AFFIX           reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    GINFIX          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    GMORPH0         reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    TRAIT           reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    PORTMA          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    PHRASE          reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+    $end            reduce using rule 24 (INHERP -> GINHER POLYP DINHER .)
+
+
+state 61
+
+    (25) MORPH0 -> GMORPH0 POLYP DMORPH0 .
+
+    REDUPL          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    ABLAUT          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    CLITIC          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    UNSPEC          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    AFFIX           reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    GINFIX          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    GMORPH0         reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    TRAIT           reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    PORTMA          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    PHRASE          reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+    $end            reduce using rule 25 (MORPH0 -> GMORPH0 POLYP DMORPH0 .)
+
+
+state 62
+
+    (26) INFIX -> GINFIX POLYP DINFIX .
+
+    REDUPL          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    ABLAUT          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    CLITIC          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    UNSPEC          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    AFFIX           reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    GINFIX          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    GMORPH0         reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    TRAIT           reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    PORTMA          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    PHRASE          reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+    $end            reduce using rule 26 (INFIX -> GINFIX POLYP DINFIX .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for PORTMA in state 6 resolved as shift
+WARNING: shift/reduce conflict for PORTMA in state 10 resolved as shift
+WARNING: shift/reduce conflict for PORTMA in state 15 resolved as shift
+WARNING: shift/reduce conflict for POLYSE in state 43 resolved as shift
+WARNING: reduce/reduce conflict in state 43 resolved using rule (POLYP -> RT)
+WARNING: rejected rule (POLY -> POLYSE RT) in state 43

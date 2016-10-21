@@ -2,9 +2,18 @@
 
 from Parser import Parser
 from Node import Node
+import typing
 
 
 class GrammarNumbers(Parser):
+    """
+        Classe à découper en au moins deux classes, le lexique, et la syntaxe
+        afin de rendre ces classes modulables.
+    """
+
+    # Il faut voir dans le terme 'token' la notion abstraite 'lexeme', c'est à dire le représentant de plusieurs formes.
+    # ainsi 'U' représentera 'deux', 'trois', 'cinq' et 'six'
+
     tokens = (
         "ET",
         "PLURIEL",
@@ -24,6 +33,13 @@ class GrammarNumbers(Parser):
         "MMM"
     )
 
+    # Les variables et fonctions prefixées par 't_' signifient qu'elles sont lexicales au sens d'un parseur
+    # Vous pouvez tester cette fonction en instanciant GrammaireNumbers et en lançant la fonction
+    # lexicalise(data) héritée de Parser.
+    # Elle restreint les éléments que nous pouvons utilisées
+
+    # Une règle lexicale peut se présenter sont la forme d'une variable ou d'une fonction
+
     t_U = r"deux|trois|cinq|six"
     t_U1 = r"une?"
     t_U4 = r"quatre"
@@ -38,16 +54,8 @@ class GrammarNumbers(Parser):
     t_M = r"mille"
     t_MM = r"million"
     t_MMM = r"milliard"
-
-    @staticmethod
-    def t_ET(t):
-        r"""et"""
-        return t
-
-    @staticmethod
-    def t_PLURIEL(t):
-        r"""s"""
-        return t
+    t_ET = r'et'
+    t_PLURIEL = r's'
 
     @staticmethod
     def t_newline(t):
@@ -62,7 +70,7 @@ class GrammarNumbers(Parser):
         t.lexer.skip(1)
 
     @staticmethod
-    def p_Num(p):
+    def p_num(p):
         """
             Num : MMMNum
                 | MMNum
@@ -75,7 +83,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_MMMNum(p):
+    def p_mmmnum(p):
         """
             MMMNum : Milliards MMNum
                    | Milliards
@@ -86,7 +94,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_MMNum(p):
+    def p_mmnum(p):
         """
             MMNum : Millions MNum
                   | Millions
@@ -97,7 +105,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_MNum(p):
+    def p_mnum(p):
         """
             MNum : Milliers CNum
                  | Milliers
@@ -108,7 +116,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_CNum(p):
+    def p_cnum(p):
         """
             CNum : CNum1
                  | U1
@@ -119,7 +127,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_CNum1_1(p):
+    def p_cnum1_1(p):
         """
             CNum1 : Centaine DNum
         """
@@ -129,7 +137,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_CNum1_2(p):
+    def p_cnum1_2(p):
         """
             CNum1 : Unite Centaines
         """
@@ -139,7 +147,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_CNum1_3(p):
+    def p_cnum1_3(p):
         """
             CNum1 : DNum1
         """
@@ -149,7 +157,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum1(p):
+    def p_dnum1(p):
         """
             DNum1 : Dizaine Un1Unite
         """
@@ -159,7 +167,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Un1Unite(p):
+    def p_un1unite(p):
         """
             Un1Unite : Un1
                      | Unite
@@ -170,7 +178,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum1_1(p):
+    def p_dnum1_1(p):
         """
             DNum1 : Dizaine8 UniVingt
         """
@@ -180,7 +188,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum1_2(p):
+    def p_dnum1_2(p):
         """
             DNum1 : Dizaine8 PLURIEL
         """
@@ -190,7 +198,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum1_3(p):
+    def p_dnum1_3(p):
         """
             DNum1 : D6 Un11UniVingt11
         """
@@ -200,7 +208,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Un11UniVingt11(p):
+    def p_un11univingt11(p):
         """
             Un11UniVingt11 : Un11
                            | UniVingt11
@@ -211,7 +219,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum1_4(p):
+    def p_dnum1_4(p):
         """
             DNum1 : UniVingt1
         """
@@ -221,7 +229,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_DNum(p):
+    def p_dnum(p):
         """
             DNum : DNum1
                  | U1
@@ -232,10 +240,10 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Un11(p):
+    def p_un11(p):
         """
             Un11 : ET U1
-                 | UV1
+                 | ET UV1
         """
         p[0] = Node(
             pere="Un11",
@@ -243,7 +251,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Un1(p):
+    def p_un1(p):
         """
             Un1 : ET U1
         """
@@ -253,7 +261,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Unite(p):
+    def p_unite(p):
         """
             Unite : U
                   | U4
@@ -265,7 +273,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_UniVingt11_1(p):
+    def p_univingt11_1(p):
         """
             UniVingt11 : Unite
                        | D1
@@ -277,7 +285,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_UniVingt11_2(p):
+    def p_univingt11_2(p):
         """
             UniVingt11 : D1 U7
         """
@@ -287,7 +295,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_UniVingt1(p):
+    def p_univingt1(p):
         """
             UniVingt1 : UniVingt11
                       | UV1
@@ -298,7 +306,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_UniVingt(p):
+    def p_univingt(p):
         """
             UniVingt : UniVingt1
                      | U1
@@ -309,7 +317,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Dizaine(p):
+    def p_dizaine(p):
         """
             Dizaine : D
                     | D2
@@ -320,7 +328,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Dizaine8(p):
+    def p_dizaine8(p):
         """
             Dizaine8 : U4 D2
         """
@@ -330,7 +338,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Centaine(p):
+    def p_centaine(p):
         """
             Centaine : Unite C
                      | C
@@ -341,7 +349,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Centaines(p):
+    def p_centaines(p):
         """
             Centaines : C PLURIEL
         """
@@ -351,7 +359,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Milliers(p):
+    def p_milliers(p):
         """
             Milliers : CNum1 M
                      | M
@@ -362,7 +370,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Millions(p):
+    def p_millions(p):
         """
             Millions : CNum MM
                      | MM
@@ -373,7 +381,7 @@ class GrammarNumbers(Parser):
         )
 
     @staticmethod
-    def p_Milliards(p):
+    def p_milliards(p):
         """
             Milliards : CNum MMM
                       | MMM
@@ -387,6 +395,46 @@ class GrammarNumbers(Parser):
     def p_error(p):
         print("Syntax error at '%s'" % p.value)
 
+
+def generate_latexfile(data: typing.Union[tuple, typing.List[str]], allinone=False):
+    """
+        Fonction qui génèrera soit un élément de data pour un fichier
+        soit
+        l'ensemble de data dans un fichier.
+    :param data:
+    :param filename:
+    :return:
+    """
+    import codecs
+
+    filename = ""
+
+
+
+    body = """\\documentclass[a4paper,landscape]{{report}}
+\\usepackage{{tikz}}
+\\usepackage{{qtree}}
+\\usepackage{{avm}}
+\\usepackage{{ulem}}
+\\begin{{document}}
+    {0}
+\end{{document}}"""
+
+    tree = """\\begin{{figure}}
+		\Tree
+            {0[1]}
+	\caption{{{0[0]}}}
+	\end{{figure}}"""
+
+    if isinstance(data, tuple):
+        return body.format(tree.format(data))
+    elif isinstance(data, list):
+        if allinone:
+            return body.format([tree.format(x) for x in data])
+        else:
+            return body.format("".join(map(lambda x: "\n\t"+tree.format(x))))
+    else:
+        raise TypeError('Pas le bon type')
 
 def main():
     grammaire = """    Num → MMMNum | MMNum | MNum | CNum
@@ -466,7 +514,13 @@ def main():
     d = GrammarNumbers()
     # for i in range(999999999999):
     #     pass
-    print(d.parse("un million deux cent onze mille trois cent quatre vingts"))
+    # p = "un million deux cent onze mille trois cent quatre vingts"
+    q = "soixante et onze"
+    # o = map(lambda x: generate_latexfile(x), map(lambda x: (x, d.parse(x)), (p, q)))
+    # print(next(o))
+    # print(next(o))
+    print(q, d.parse(q))
+    # print(generate_latexfile((p, d.parse(p))))
 
 
 if __name__ == '__main__':

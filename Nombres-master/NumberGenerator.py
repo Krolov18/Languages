@@ -7,6 +7,11 @@ from abc import ABC, abstractmethod
 
 
 class NumberGenerator:
+    """
+        Classe composée d'outils permettant la transformation d'un entier dans sa prononciation dans une langue donnée.
+        Cette classe peut faire eniter vers graphie mais graphie vers entier.
+        Elle peut aussi renvoyer le ou les arbres de dérivations.
+    """
     @staticmethod
     def int2list(i: int) -> list:
         if i < 10:
@@ -65,15 +70,14 @@ class NumberGenerator:
 
     @staticmethod
     def add_parentheses(l: list):
-        print(l)
-        for i ,j in enumerate(l):
+        for i, j in enumerate(l):
             if isinstance(j, list) and len(l[i]) >= 2:
                 l[i].insert(0, '(')
                 l[i].append(')')
         return l
 
     @staticmethod
-    def add_symbols(l: list) -> str:
+    def add_symbols(l: typing.Iterable) -> str:
         import re
 
         tmp = list(map(str, l))
@@ -182,7 +186,21 @@ def main():
     with sqlite3.connect('Lexique.db') as conn:
         cursor = conn.cursor()
     intp = 7102469827103726
-    print(NumberGenerator.add_symbols(list(NumberGenerator.chain(*NumberGenerator.add_parentheses(NumberGenerator.add_multiples(NumberGenerator.chunk(NumberGenerator.int2list(intp))))))))
+    print(
+        NumberGenerator.add_symbols(
+                NumberGenerator.chain(
+                    *NumberGenerator.add_parentheses(
+                        NumberGenerator.add_multiples(
+                            NumberGenerator.chunk(
+                                NumberGenerator.int2list(
+                                    intp
+                                )
+                            )
+                        )
+                    )
+                )
+            )
+        )
 
 if __name__ == '__main__':
     main()

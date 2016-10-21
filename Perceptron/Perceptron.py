@@ -161,7 +161,6 @@ class Perceptron(object):
                 )
             )
             random.shuffle(train_data)
-        None
 
     def get_features(self, i, word, context, prev1, prev2):
         """

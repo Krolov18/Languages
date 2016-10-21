@@ -1,0 +1,2 @@
+# Gloses
+Générateur de gloses

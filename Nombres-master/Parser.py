@@ -52,7 +52,7 @@ class Parser:
                 continue
             print(self.yacc.parse(s))
 
-    def test(self, data):
+    def lexicalise(self, data):
         self.lexer.input(data)
         while True:
             tok = self.lexer.token()
