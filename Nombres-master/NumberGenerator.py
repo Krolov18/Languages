@@ -3,6 +3,7 @@
 import sqlite3
 import typing
 from Number import Number
+from abc import ABC, abstractmethod
 
 
 class NumberGenerator:
@@ -60,7 +61,16 @@ class NumberGenerator:
                         )
                     )
                 ) if x is not None]
-        return list(NumberGenerator.chain(*l))
+        return l
+
+    @staticmethod
+    def add_parentheses(l: list):
+        print(l)
+        for i ,j in enumerate(l):
+            if isinstance(j, list) and len(l[i]) >= 2:
+                l[i].insert(0, '(')
+                l[i].append(')')
+        return l
 
     @staticmethod
     def add_symbols(l: list) -> str:
@@ -128,7 +138,24 @@ class NumberGenerator:
 
     @staticmethod
     def convert_int2str(i: int, parser: Number, cursor: sqlite3.Cursor) -> typing.List[int]:
-        return map(lambda x: NumberGenerator.int2str(x, cursor), map(int, parser.parse(NumberGenerator.add_symbols(NumberGenerator.add_multiples(NumberGenerator.chunk(NumberGenerator.int2list(i),3))))))
+        return map(
+            lambda x: NumberGenerator.int2str(x, cursor),
+            map(
+                int,
+                parser.parse(
+                    NumberGenerator.add_symbols(
+                        NumberGenerator.add_multiples(
+                            NumberGenerator.chunk(
+                                NumberGenerator.int2list(
+                                    i
+                                ),
+                                3
+                            )
+                        )
+                    )
+                )
+            )
+        )
 
     @staticmethod
     def chain(*iterables: typing.Iterator):
@@ -149,12 +176,13 @@ class NumberGenerator:
 
 
 def main():
+    import itertools
     import sqlite3
     tmp = Number()
     with sqlite3.connect('Lexique.db') as conn:
         cursor = conn.cursor()
-    intp = 315222
-    print(tmp.parse(NumberGenerator.add_symbols(NumberGenerator.add_multiples(NumberGenerator.chunk(NumberGenerator.int2list(intp), 3)))))
+    intp = 7102469827103726
+    print(NumberGenerator.add_symbols(list(NumberGenerator.chain(*NumberGenerator.add_parentheses(NumberGenerator.add_multiples(NumberGenerator.chunk(NumberGenerator.int2list(intp))))))))
 
 if __name__ == '__main__':
     main()

@@ -4,6 +4,7 @@ import ply.lex as lex
 import ply.yacc as yacc
 import os
 from NumberLexicon import NumberLexicon
+import pickle
 
 
 tokens = NumberLexicon.tokens
@@ -20,6 +21,7 @@ class Parser:
 
     def __init__(self, **kw):
         self.debug = kw.get('debug', 0)
+        self.base = kw.get('excpetions', None)
         self.names = {}
         try:
             modname = os.path.split(os.path.splitext(__file__)[0])[1] + "_" + self.__class__.__name__
@@ -29,31 +31,18 @@ class Parser:
         self.tabmodule = modname + "_" + "parsetab"
 
         # Build the lexer and parser
-        lex.lex(
+        self.lexer = lex.lex(
             module=self,
             debug=self.debug
         )
-        yacc.yacc(
+        self.yacc = yacc.yacc(
             module=self,
             debug=self.debug,
             debugfile=self.debugfile,
             tabmodule=self.tabmodule
         )
 
-    @staticmethod
-    def exception(key: int, language: str) -> dict:
-        """
-            Fonction permettant d'accéder aux formes non-décomposables.
-            Pour l'instant celles-ci sont classées par langues.
-        :param key: clé correspondant à un chiffre dans le dictionnaire
-        :param language: chaine de caractère caractérisant la langue dans laquelle la clé doit être cherchée.
-        :return: on retourne la vlaeur associée à la clé soit un dictionnaire à deux entrées ('graphie', 'phonologie')
-        """
-        import pickle
-        return pickle.load(open('exceptions.pickle', 'rb')).get(language).get(key, False)
-
-    @staticmethod
-    def run_while():
+    def run_while(self):
         while 1:
             try:
                 s = input('translate > ')
@@ -61,7 +50,15 @@ class Parser:
                 break
             if not s:
                 continue
-            print(yacc.parse(s))
+            print(self.yacc.parse(s))
+
+    def test(self, data):
+        self.lexer.input(data)
+        while True:
+            tok = self.lexer.token()
+            if not tok:
+                break
+            print(tok)
 
     def parse(self, c: str) -> str:
         return yacc.parse(c)
