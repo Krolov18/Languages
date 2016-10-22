@@ -68,16 +68,6 @@ import typing
 #     def p_error(p):
 #         print("Syntax error at '%s'" % p.value)
 
-class Numbere(Lexique.Lexique):
-    tokens = ("NUMBER", "PLUS", "TIMES")
-
-    literals = ('(', ')')
-
-    t_PLUS = r'\+'
-    t_TIMES = r'\*'
-    t_NUMBER = r'\d+'
-    t_ignore = r'\t\n '
-
 
 
 class Number(Parser):
@@ -216,6 +206,28 @@ def reduire(obj1: typing.Union[int, tuple, None], obj2: typing.Union[int, tuple,
         raise LookupError('Cas de figure non pris en compte')
 
 
+
+class X:
+    def f(self, g):
+        if g == 5: return g
+        else: return None
+
+
+class Y:
+    def f(self, g):
+        if g == 10: return g
+        else: return None
+
+
+class Z(X, Y):
+    def f(self, g):
+        x = X.f(self, g)
+        y = Y.f(self, g)
+        if x: return x
+        elif y: return y
+
+
+
 def main():
     import pickle
 
@@ -245,7 +257,7 @@ def main():
             (7*100+2*10+6)
         """
     )
-    d = tmp.parse("3*10000000000000+0")
+    d = tmp.parse("(9*100+9*10+9)*1000000000+(9*100+9*10+9)*1000000+(9*100+9*10+9)*1000+(9*100+9*10+9)")
 
     if d[1] is None:
         print(d[0])

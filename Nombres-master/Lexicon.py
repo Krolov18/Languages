@@ -1,7 +1,9 @@
 # coding: utf-8
 
+from abc import ABC
 
-class Lexique():
+
+class Lexicon(ABC):
     tokens = ()
     literals  =()
 

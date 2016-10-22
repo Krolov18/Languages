@@ -112,19 +112,13 @@ class NumberGenerator:
         return cursor.fetchone()
 
     @staticmethod
-    def int2str(i: int, cursor: sqlite3.Cursor) -> str:
+    def int2str(i: int, d: dict) -> str:
         """
-            On interroge une base de données, on vérifie si l'entier fourni en paramètre
-            se trouve dans la base, si oui, on renvoie tous les couples (graphie, phonlogie)
-            pouvant correspondre à l'entier en question.
         :param i: entier
-        :param cursor:
+        :param d: dictionnaire avec en clé des entiers, en valeur un tuple (graphie, phonologie)
         :return: liste de couples (graphie, phonologie)
         """
-        recherche = "SELECT ortho, phon FROM Lexique WHERE integer = ?"
-
-        cursor.execute(recherche, [str(i)])
-        return cursor.fetchall()
+        return d.get(i)
 
     @staticmethod
     def convert_str2int(s: str, cursor: sqlite3.Cursor) -> typing.List[str]:
@@ -141,25 +135,30 @@ class NumberGenerator:
         )
 
     @staticmethod
-    def convert_int2str(i: int, parser: Number, cursor: sqlite3.Cursor) -> typing.List[int]:
-        return map(
-            lambda x: NumberGenerator.int2str(x, cursor),
-            map(
-                int,
-                parser.parse(
+    def convert_int2str(i: int, parser: Number, d: dict) -> typing.List[int]:
+        parsing = parser.parse(
                     NumberGenerator.add_symbols(
-                        NumberGenerator.add_multiples(
-                            NumberGenerator.chunk(
-                                NumberGenerator.int2list(
-                                    i
-                                ),
-                                3
+                        NumberGenerator.chain(
+                            *NumberGenerator.add_parentheses(
+                                NumberGenerator.add_multiples(
+                                    NumberGenerator.chunk(
+                                        NumberGenerator.int2list(
+                                            i
+                                        )
+                                    )
+                                )
                             )
                         )
                     )
                 )
-            )
-        )
+        if parsing[1] is not None:
+            return list(map(lambda x: NumberGenerator.int2str(x, d), NumberGenerator.delete0(parsing[1])))
+        else:
+            return [NumberGenerator.int2str(int(parsing[0]), d)]
+
+    @staticmethod
+    def delete0(l: typing.Sequence):
+        return filter(lambda  x: x!=0, l)
 
     @staticmethod
     def chain(*iterables: typing.Iterator):
@@ -180,27 +179,27 @@ class NumberGenerator:
 
 
 def main():
-    import itertools
     import sqlite3
-    tmp = Number()
+    import pickle
+
+    c = NumberGenerator()
+
+    base = pickle.load(open('exceptions.pickle', 'rb')).get('français')
+    parser = Number(excpetions=base)
+
+    reche = "SELECT integer, ortho, phon FROM Lexique WHERE isinteger = 1"
+
+
+
     with sqlite3.connect('Lexique.db') as conn:
         cursor = conn.cursor()
-    intp = 7102469827103726
-    print(
-        NumberGenerator.add_symbols(
-                NumberGenerator.chain(
-                    *NumberGenerator.add_parentheses(
-                        NumberGenerator.add_multiples(
-                            NumberGenerator.chunk(
-                                NumberGenerator.int2list(
-                                    intp
-                                )
-                            )
-                        )
-                    )
-                )
-            )
-        )
+
+    intp = range(1, 999)
+
+    base2 = {x: (y, z) for x, y, z in cursor.execute(reche).fetchall()}
+    print(base2)
+
+    for x in map(lambda x: c.convert_int2str(x, parser, base2), intp): print(x)
 
 if __name__ == '__main__':
     main()

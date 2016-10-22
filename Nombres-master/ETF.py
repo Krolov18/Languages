@@ -1,9 +1,6 @@
 # coding: utf-8
 
 from abc import ABC, abstractmethod
-from DocStringInheritance import DocInherit
-from functools import reduce
-from operator import mul, add
 
 
 class ETF(ABC):
@@ -40,34 +37,9 @@ class ETF(ABC):
         """ F : UNIT """
         pass
 
-class R(ETF):
-    @DocInherit
-    def p_e_1(self, p):
-        pass
-
-    @DocInherit
-    def p_e_2(self, p):
-        pass
-
-    @DocInherit
-    def p_t_1(self, p):
-        pass
-
-    @DocInherit
-    def p_t_2(self, p):
-        pass
-
-    @DocInherit
-    def p_f_1(self, p):
-        pass
-
-    @DocInherit
-    def p_f_2(self, p):
-        pass
-
 
 def main():
-    x = R()
+    pass
 
 if __name__ == '__main__':
     main()
