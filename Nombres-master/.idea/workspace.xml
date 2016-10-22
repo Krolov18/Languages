@@ -49,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/NumberGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="213">
-              <caret line="199" column="66" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
+              <caret line="199" column="92" selection-start-line="199" selection-start-column="92" selection-end-line="199" selection-end-column="92" />
               <folding>
                 <element signature="e#17#31#0" expanded="true" />
                 <element signature="e#137#412#1" expanded="false" />
@@ -63,8 +63,8 @@
                 <element signature="e#5334#5367#0" expanded="false" />
                 <element signature="e#5439#5617#0" expanded="false" />
                 <element signature="e#5695#5880#0" expanded="false" />
-                <marker date="1477153631000" expanded="false" signature="1158:2236" ph="..." />
-                <marker date="1477153631000" expanded="false" signature="2289:2464" ph="..." />
+                <marker date="1477153692000" expanded="false" signature="1158:2236" ph="..." />
+                <marker date="1477153692000" expanded="false" signature="2289:2464" ph="..." />
               </folding>
             </state>
           </provider>
@@ -568,7 +568,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4950249" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4950249" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -865,7 +865,7 @@
     <entry file="file://$PROJECT_DIR$/NumberGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="199" column="66" selection-start-line="199" selection-start-column="66" selection-end-line="199" selection-end-column="66" />
+          <caret line="199" column="92" selection-start-line="199" selection-start-column="92" selection-end-line="199" selection-end-column="92" />
           <folding>
             <element signature="e#17#31#0" expanded="true" />
             <element signature="e#137#412#1" expanded="false" />
@@ -879,8 +879,8 @@
             <element signature="e#5334#5367#0" expanded="false" />
             <element signature="e#5439#5617#0" expanded="false" />
             <element signature="e#5695#5880#0" expanded="false" />
-            <marker date="1477153631000" expanded="false" signature="1158:2236" ph="..." />
-            <marker date="1477153631000" expanded="false" signature="2289:2464" ph="..." />
+            <marker date="1477153692000" expanded="false" signature="1158:2236" ph="..." />
+            <marker date="1477153692000" expanded="false" signature="2289:2464" ph="..." />
           </folding>
         </state>
       </provider>
