@@ -194,10 +194,10 @@ def main():
     with sqlite3.connect('Lexique.db') as conn:
         cursor = conn.cursor()
 
-    intp = range(1, 999)
+    intp = range(1, 1000)
 
-    base2 = {x: (y, z) for x, y, z in cursor.execute(reche).fetchall()}
-    print(base2)
+    # base2 = {x: (y, z) for x, y, z in cursor.execute(reche).fetchall()}
+    base2 = {x: y for x, y, z in cursor.execute(reche).fetchall()}
 
     for x in map(lambda x: c.convert_int2str(x, parser, base2), intp): print(x)
 
