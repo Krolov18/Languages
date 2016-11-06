@@ -187,37 +187,17 @@ def main():
             end="endtime"
         )
 
-        list(map(
-            lambda x: decoupe(
-                soundfile=args.input,
-                start=x[0],
-                end=x[1],
-                output=None
-            ),
-            temps
-        ))
-
-        # print('PROUT')
-        # print(list(map(lambda x: (x[0], x[1]), temps)))
-        # [
-        #     decoupe(
-        #         soundfile=args.input,
-        #         start=x,
-        #         end=y,
-        #         output=".".join(
-        #             [
-        #                 "_".join(
-        #                     [
-        #                         filename,
-        #                         x,
-        #                         y
-        #                     ]
-        #                 ),
-        #                 extention
-        #             ]
-        #         )
-        #     ) for x, y in temps
-        # ]
+        list(
+            map(
+                lambda x: decoupe(
+                    soundfile=args.input,
+                    start=x[0],
+                    end=x[1],
+                    output=None
+                ),
+                temps
+            )
+        )
 
     elif args.dataBase:
         curseur = args.dataBase.cursor()
@@ -229,16 +209,6 @@ def main():
             (name, start, end) = extraction
             if name in args.input.entree:
                 args.input.decouper(start, end)
-
-
-def main2():
-    import codecs
-    temps = list(extraire(codecs.open("//Volumes/KOKO/test/VOIX_mme_mathon_TD3.trs", 'r', 'latin-1'), node='turn', start="starttime", end="endtime"))
-    decoupe(
-        soundfile="//Volumes/KOKO/test/VOIX_mme_mathon_TD3.WAV",
-        start=temps[0][0],
-        end=temps[0][1]
-    )
 
 if __name__ == "__main__":
     main()
