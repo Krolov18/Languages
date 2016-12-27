@@ -7,11 +7,15 @@ import DocStringInheritance
 
 class NumberSyntax5(NumberSyntax.NumberSyntax):
     @DocStringInheritance.DocInherit
-    def p_t_1(self, p):
+    def p_t(self, p):
         if p[3] != '5':
-            raise ValueError("'multi' doit impérativement être 5.")
+            return False
+        return True
 
-    @DocStringInheritance.DocInherit
-    def p_t_2(self, p):
-        if p[3] != '5':
-            raise ValueError("'multi' doit impérativement être 5.")
+
+def main():
+    c = NumberSyntax5()
+    print(c)
+
+if __name__ == '__main__':
+    main()

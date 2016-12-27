@@ -519,8 +519,9 @@ def main():
     # o = map(lambda x: generate_latexfile(x), map(lambda x: (x, d.parse(x)), (p, q)))
     # print(next(o))
     # print(next(o))
-    print(q, d.parse(q))
-    # print(generate_latexfile((p, d.parse(p))))
+    # print(q, d.parse(q))
+    print(generate_latexfile(list(map(lambda x: d.parse(x), ["onze", "quarante cinq mille deux cent soixante dix huit", "deux cent quatre vingt onze", "vingt et un mille cent un", "deux", "cent trois"])), allinone=True))
+    print(generate_latexfile((q, d.parse(q))))
 
 
 if __name__ == '__main__':

@@ -5,9 +5,9 @@ _tabversion = '3.8'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'F7269452336BCB7DB71424E0DB417199'
+_lr_signature = '79359633C517E839DA2C575ADA9C880E'
     
-_lr_action_items = {'(':([0,1,8,],[1,1,1,]),'ZERO':([0,1,8,14,17,],[4,4,4,17,17,]),'UNIT':([0,1,8,9,10,],[6,6,6,14,14,]),'PLUS':([2,15,16,17,18,19,],[8,-4,-5,-9,-8,-10,]),')':([4,6,7,11,12,13,],[-7,-6,11,-3,-1,-2,]),'TIMES':([3,4,5,6,7,11,12,13,],[9,-7,10,-6,9,-3,10,9,]),'$end':([3,4,6,11,12,13,],[0,-7,-6,-3,-1,-2,]),}
+_lr_action_items = {'ZERO':([0,5,7,14,17,],[1,1,1,17,17,]),')':([1,6,10,11,12,16,],[-7,-6,16,-1,-2,-3,]),'*':([1,3,4,6,10,11,12,16,],[-7,8,9,-6,9,8,9,-3,]),'+':([2,13,15,17,18,19,],[7,-5,-4,-9,-8,-10,]),'(':([0,5,7,],[5,5,5,]),'UNIT':([0,5,7,8,9,],[6,6,6,14,14,]),'$end':([1,4,6,11,12,16,],[-7,0,-6,-1,-2,-3,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -16,7 +16,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'unit':([0,1,8,],[5,5,12,]),'T':([0,1,8,],[2,2,2,]),'S':([0,1,8,],[3,7,13,]),'zeros':([14,17,],[18,19,]),'multi':([9,10,],[15,16,]),}
+_lr_goto_items = {'unit':([0,5,7,],[3,3,11,]),'S':([0,5,7,],[4,10,12,]),'zeros':([14,17,],[18,19,]),'multi':([8,9,],[13,15,]),'T':([0,5,7,],[2,2,2,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -26,14 +26,14 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> S","S'",1,None,None,None),
-  ('S -> T PLUS unit','S',3,'p_s_1','Number.py',105),
-  ('S -> T PLUS S','S',3,'p_s_2','Number.py',111),
-  ('S -> ( S )','S',3,'p_s_3','Number.py',117),
-  ('T -> S TIMES multi','T',3,'p_t_1','Number.py',124),
-  ('T -> unit TIMES multi','T',3,'p_t_2','Number.py',130),
-  ('unit -> UNIT','unit',1,'p_unit','Number.py',136),
-  ('unit -> ZERO','unit',1,'p_unit','Number.py',137),
-  ('multi -> UNIT zeros','multi',2,'p_multi','Number.py',144),
-  ('zeros -> ZERO','zeros',1,'p_zeros','Number.py',151),
-  ('zeros -> ZERO zeros','zeros',2,'p_zeros','Number.py',152),
+  ('S -> T + unit','S',3,'p_s_1','Number.py',99),
+  ('S -> T + S','S',3,'p_s_2','Number.py',105),
+  ('S -> ( S )','S',3,'p_s_3','Number.py',111),
+  ('T -> S * multi','T',3,'p_t_1','Number.py',118),
+  ('T -> unit * multi','T',3,'p_t_2','Number.py',124),
+  ('unit -> UNIT','unit',1,'p_unit','Number.py',130),
+  ('unit -> ZERO','unit',1,'p_unit','Number.py',131),
+  ('multi -> UNIT zeros','multi',2,'p_multi','Number.py',138),
+  ('zeros -> ZERO','zeros',1,'p_zeros','Number.py',145),
+  ('zeros -> ZERO zeros','zeros',2,'p_zeros','Number.py',146),
 ]

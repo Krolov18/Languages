@@ -65,7 +65,7 @@ class DocInherit(object):
     def use_parent_doc(self, func, source):
         if source is None:
             raise NameError("Can't find '%s' in parents" % self.name)
-        func.__doc__ = source.__doc__
+        func.__doc__ = "***{0}***".format(source.__doc__)
         return func
 
 if __name__ == '__main__':

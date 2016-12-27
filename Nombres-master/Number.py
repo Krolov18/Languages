@@ -69,19 +69,13 @@ import typing
 #         print("Syntax error at '%s'" % p.value)
 
 
-
 class Number(Parser):
     tokens = (
         "UNIT",
-        "PLUS",
-        "TIMES",
         "ZERO"
     )
 
-    literals = ('(', ')')
-
-    t_PLUS = r'\+'
-    t_TIMES = r'\*'
+    literals = ('(', ')', '*', '+')
 
     @staticmethod
     def t_UNIT(t):
@@ -102,13 +96,13 @@ class Number(Parser):
 
     def p_s_1(self, p):
         """
-            S : T PLUS unit
+            S : T '+' unit
         """
         p[0] = reduire(p[1], int(p[3]), add, self.base)
 
     def p_s_2(self, p):
         """
-            S : T PLUS S
+            S : T '+' S
         """
         p[0] = reduire(p[1], p[3], add, self.base)
 
@@ -121,13 +115,13 @@ class Number(Parser):
 
     def p_t_1(self, p):
         """
-            T : S TIMES multi
+            T : S '*' multi
         """
         p[0] = reduire(p[1], int(p[3]), mul, self.base)
 
     def p_t_2(self, p):
         """
-            T : unit TIMES multi
+            T : unit '*' multi
         """
         p[0] = reduire(int(p[1]), p[3], mul, self.base)
 
@@ -206,63 +200,35 @@ def reduire(obj1: typing.Union[int, tuple, None], obj2: typing.Union[int, tuple,
         raise LookupError('Cas de figure non pris en compte')
 
 
-
-class X:
-    def f(self, g):
-        if g == 5: return g
-        else: return None
-
-
-class Y:
-    def f(self, g):
-        if g == 10: return g
-        else: return None
-
-
-class Z(X, Y):
-    def f(self, g):
-        x = X.f(self, g)
-        y = Y.f(self, g)
-        if x: return x
-        elif y: return y
-
-
-
 def main():
     import pickle
+    import math
+    print(21345)
+    # base = pickle.load(open('exceptions.pickle', 'rb')).get('français')
+    # tmp = Number(excpetions=base)
 
-    base = pickle.load(open('exceptions.pickle', 'rb')).get('français')
-    tmp = Number(excpetions=base)
-    c = tmp.parse(
-        """ 7
-            *
-            1000000000000000
-            +
-            (1*100+0*10+2)
-            *
-            1000000000000
-            +
-            (4*100+6*10+9)
-            *
-            1000000000
-            +
-            (8*100+2*10+7)
-            *
-            1000000
-            +
-            (1*100+0*10+3)
-            *
-            1000
-            +
-            (7*100+2*10+6)
-        """
-    )
-    d = tmp.parse("(9*100+9*10+9)*1000000000+(9*100+9*10+9)*1000000+(9*100+9*10+9)*1000+(9*100+9*10+9)")
+    # d = tmp.parse("(9*100+9*10+9)*1000000000+(9*100+9*10+9)*1000000+(9*100+9*10+9)*1000+(9*100+9*10+9)")
 
-    if d[1] is None:
-        print(d[0])
-    else:
-        print(d[1])
+    # if d[1] is None:
+    #     print(d[0])
+    # else:
+    #     print(999999999)
+    #     print(d[1])
+    #     print(list(map(lambda x: base[x]['graphie'], d[1])))
+
+def Base(base: str, i: int):
+    if base == "5":
+        return (5**id for id in reversed(range(len(str(i)))))
+    if base == "5e20":
+        d='2*10000'
+    if base == "10e20":
+        pass
+    if base == "10":
+        pass
+    if base == "20":
+        pass
+
+
 
 if __name__ == '__main__':
     main()
