@@ -1,0 +1,6 @@
+Ce projet consiste dans la constituion d'une grammaire de style HPSG. C'est-à-dire, de définir
+un ensemble de types, qui, après unification servira à représenter des objets.
+
+Dans un premier temps ce projet est purement linguistique. L'objet d'étude est le français, d'où le nom du projet.
+Mais dans un but expensif, la logique HPSG devra pouvoir représenter n'importe quelle structure.
+

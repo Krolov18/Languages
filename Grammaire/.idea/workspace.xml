@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0718519f-a915-4099-a785-c38e08ba4f1b" name="Default" comment="" />
+    <ignored path="Grammaire.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Grammaire" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/types.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages />
+      <showMembers ProjectPane="true" />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType Scratches="true" ProjectPane="true" />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.types">
+    <configuration default="false" name="types" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/types.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Grammaire" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.types" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Python.types" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0718519f-a915-4099-a785-c38e08ba4f1b" name="Default" comment="" />
+      <created>1473372000804</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1473372000804</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17135416" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="698" y="24" width="524" height="1032" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39010417" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="26" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#61#93#0" expanded="false" />
+            <element signature="e#122#216#0" expanded="false" />
+            <element signature="e#245#428#0" expanded="false" />
+            <element signature="e#457#565#0" expanded="false" />
+            <element signature="e#596#704#0" expanded="false" />
+            <element signature="e#736#1260#0" expanded="false" />
+            <element signature="e#1294#1358#0" expanded="false" />
+            <element signature="e#1386#1658#0" expanded="false" />
+            <element signature="e#1694#1995#0" expanded="false" />
+            <element signature="e#2035#2177#0" expanded="false" />
+            <element signature="e#2218#2449#0" expanded="false" />
+            <element signature="e#2802#3044#0" expanded="false" />
+            <element signature="e#3082#3335#0" expanded="false" />
+            <element signature="e#3372#3609#0" expanded="false" />
+            <element signature="e#3651#3912#0" expanded="false" />
+            <element signature="e#3957#4194#0" expanded="false" />
+            <element signature="e#4250#4689#0" expanded="false" />
+            <element signature="e#4770#5217#0" expanded="false" />
+            <element signature="e#5270#5557#0" expanded="false" />
+            <element signature="e#5583#6672#0" expanded="false" />
+            <element signature="e#6720#6917#0" expanded="false" />
+            <element signature="e#6991#7099#0" expanded="false" />
+            <element signature="e#7179#7380#0" expanded="false" />
+            <element signature="e#7491#7599#0" expanded="false" />
+            <element signature="e#7632#7758#0" expanded="false" />
+            <element signature="e#7805#8008#0" expanded="false" />
+            <element signature="e#8058#8264#0" expanded="false" />
+            <element signature="e#8316#8524#0" expanded="false" />
+            <element signature="e#8579#8649#0" expanded="false" />
+            <element signature="e#8701#8909#0" expanded="false" />
+            <element signature="e#8964#9034#0" expanded="false" />
+            <element signature="e#9064#9110#0" expanded="false" />
+            <element signature="e#9152#9198#0" expanded="false" />
+            <element signature="e#9246#9495#0" expanded="false" />
+            <element signature="e#9547#9692#0" expanded="false" />
+            <element signature="e#9749#9891#0" expanded="false" />
+            <element signature="e#9949#10094#0" expanded="false" />
+            <element signature="e#10152#10222#0" expanded="false" />
+            <element signature="e#10274#10424#0" expanded="false" />
+            <element signature="e#10481#10623#0" expanded="false" />
+            <element signature="e#10684#10836#0" expanded="false" />
+            <element signature="e#10898#11051#0" expanded="false" />
+            <element signature="e#11109#11254#0" expanded="false" />
+            <element signature="e#11317#11469#0" expanded="false" />
+            <element signature="e#11533#11686#0" expanded="false" />
+            <element signature="e#11744#11814#0" expanded="false" />
+            <element signature="e#11872#11942#0" expanded="false" />
+            <element signature="e#11994#12144#0" expanded="false" />
+            <element signature="e#12201#12343#0" expanded="false" />
+            <element signature="e#12404#12556#0" expanded="false" />
+            <element signature="e#12621#12775#0" expanded="false" />
+            <element signature="e#12841#12996#0" expanded="false" />
+            <element signature="e#13058#13211#0" expanded="false" />
+            <element signature="e#13278#13433#0" expanded="false" />
+            <element signature="e#13501#13657#0" expanded="false" />
+            <element signature="e#13715#13860#0" expanded="false" />
+            <element signature="e#13923#14075#0" expanded="false" />
+            <element signature="e#14142#14296#0" expanded="false" />
+            <element signature="e#14364#14519#0" expanded="false" />
+            <element signature="e#14583#14736#0" expanded="false" />
+            <element signature="e#14805#14960#0" expanded="false" />
+            <element signature="e#15030#15186#0" expanded="false" />
+            <element signature="e#15401#15535#0" expanded="false" />
+            <element signature="e#15796#15922#0" expanded="false" />
+            <element signature="e#15974#16103#0" expanded="false" />
+            <element signature="e#16171#16302#0" expanded="false" />
+            <element signature="e#16379#16512#0" expanded="false" />
+            <element signature="e#16590#16724#0" expanded="false" />
+            <element signature="e#16795#16929#0" expanded="false" />
+            <element signature="e#17008#17139#0" expanded="false" />
+            <element signature="e#17219#17353#0" expanded="false" />
+            <element signature="e#17438#17574#0" expanded="false" />
+            <element signature="e#17660#17797#0" expanded="false" />
+            <element signature="e#17876#18009#0" expanded="false" />
+            <element signature="e#18093#18229#0" expanded="false" />
+            <element signature="e#18312#18447#0" expanded="false" />
+            <element signature="e#18529#18663#0" expanded="false" />
+            <element signature="e#18696#19242#0" expanded="false" />
+            <element signature="e#19292#19439#0" expanded="false" />
+            <element signature="e#19508#19649#0" expanded="false" />
+            <element signature="e#19721#19865#0" expanded="false" />
+            <element signature="e#19953#20104#0" expanded="false" />
+            <element signature="e#20202#20356#0" expanded="false" />
+            <element signature="e#20453#20606#0" expanded="false" />
+            <element signature="e#20692#20846#0" expanded="false" />
+            <element signature="e#20940#21092#0" expanded="false" />
+            <element signature="e#21191#21345#0" expanded="false" />
+            <element signature="e#21448#21604#0" expanded="false" />
+            <element signature="e#21710#21867#0" expanded="false" />
+            <element signature="e#21967#22122#0" expanded="false" />
+            <element signature="e#22227#22384#0" expanded="false" />
+            <element signature="e#22490#22648#0" expanded="false" />
+            <element signature="e#22739#22894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Documents/PycharmProjects/GLOSES/DecoupeurRecursif.py" />
+    <entry file="file://D:/Datas_2/Documents/PycharmProjects/GLOSES/DecoupeurChaine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/PycharmProjects/GLOSES/DecoupeurRecursif.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/PycharmProjects/GLOSES/Formeur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/PycharmProjects/GLOSES/generateur_regex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/PycharmProjects/GLOSES/Decoupeur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/mwe_ply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/gloseur_lex&amp;yacc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/DecoupeurRecursif.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/Formeur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/generateur_regex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1479">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/parseur-glose.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/syntaxe_gloseur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/Gloseur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/DecoupeurChaine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/Decoupeur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/CSV2PYTHON.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/bdLex2Glosex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/GitHub/GLOSES/Tableur.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Datas_2/Documents/Gloseur/calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../French_HPSG/types/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1598">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="541" column="0" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
+          <folding>
+            <element signature="e#61#93#0" expanded="false" />
+            <element signature="e#122#216#0" expanded="false" />
+            <element signature="e#245#428#0" expanded="false" />
+            <element signature="e#457#565#0" expanded="false" />
+            <element signature="e#596#704#0" expanded="false" />
+            <element signature="e#736#1260#0" expanded="false" />
+            <element signature="e#1294#1358#0" expanded="false" />
+            <element signature="e#1386#1658#0" expanded="false" />
+            <element signature="e#1694#1995#0" expanded="false" />
+            <element signature="e#2035#2177#0" expanded="false" />
+            <element signature="e#2218#2449#0" expanded="false" />
+            <element signature="e#2802#3044#0" expanded="false" />
+            <element signature="e#3082#3335#0" expanded="false" />
+            <element signature="e#3372#3609#0" expanded="false" />
+            <element signature="e#3651#3912#0" expanded="false" />
+            <element signature="e#3957#4194#0" expanded="false" />
+            <element signature="e#4250#4689#0" expanded="false" />
+            <element signature="e#4770#5217#0" expanded="false" />
+            <element signature="e#5270#5557#0" expanded="false" />
+            <element signature="e#5583#6672#0" expanded="false" />
+            <element signature="e#6720#6917#0" expanded="false" />
+            <element signature="e#6991#7099#0" expanded="false" />
+            <element signature="e#7179#7380#0" expanded="false" />
+            <element signature="e#7491#7599#0" expanded="false" />
+            <element signature="e#7632#7758#0" expanded="false" />
+            <element signature="e#7805#8008#0" expanded="false" />
+            <element signature="e#8058#8264#0" expanded="false" />
+            <element signature="e#8316#8524#0" expanded="false" />
+            <element signature="e#8579#8649#0" expanded="false" />
+            <element signature="e#8701#8909#0" expanded="false" />
+            <element signature="e#8964#9034#0" expanded="false" />
+            <element signature="e#9064#9110#0" expanded="false" />
+            <element signature="e#9152#9198#0" expanded="false" />
+            <element signature="e#9246#9495#0" expanded="false" />
+            <element signature="e#9547#9692#0" expanded="false" />
+            <element signature="e#9749#9891#0" expanded="false" />
+            <element signature="e#9949#10094#0" expanded="false" />
+            <element signature="e#10152#10222#0" expanded="false" />
+            <element signature="e#10274#10424#0" expanded="false" />
+            <element signature="e#10481#10623#0" expanded="false" />
+            <element signature="e#10684#10836#0" expanded="false" />
+            <element signature="e#10898#11051#0" expanded="false" />
+            <element signature="e#11109#11254#0" expanded="false" />
+            <element signature="e#11317#11469#0" expanded="false" />
+            <element signature="e#11533#11686#0" expanded="false" />
+            <element signature="e#11744#11814#0" expanded="false" />
+            <element signature="e#11872#11942#0" expanded="false" />
+            <element signature="e#11994#12144#0" expanded="false" />
+            <element signature="e#12201#12343#0" expanded="false" />
+            <element signature="e#12404#12556#0" expanded="false" />
+            <element signature="e#12621#12775#0" expanded="false" />
+            <element signature="e#12841#12996#0" expanded="false" />
+            <element signature="e#13058#13211#0" expanded="false" />
+            <element signature="e#13278#13433#0" expanded="false" />
+            <element signature="e#13501#13657#0" expanded="false" />
+            <element signature="e#13715#13860#0" expanded="false" />
+            <element signature="e#13923#14075#0" expanded="false" />
+            <element signature="e#14142#14296#0" expanded="false" />
+            <element signature="e#14364#14519#0" expanded="false" />
+            <element signature="e#14583#14736#0" expanded="false" />
+            <element signature="e#14805#14960#0" expanded="false" />
+            <element signature="e#15030#15186#0" expanded="false" />
+            <element signature="e#15401#15535#0" expanded="false" />
+            <element signature="e#15796#15922#0" expanded="false" />
+            <element signature="e#15974#16103#0" expanded="false" />
+            <element signature="e#16171#16302#0" expanded="false" />
+            <element signature="e#16379#16512#0" expanded="false" />
+            <element signature="e#16590#16724#0" expanded="false" />
+            <element signature="e#16795#16929#0" expanded="false" />
+            <element signature="e#17008#17139#0" expanded="false" />
+            <element signature="e#17219#17353#0" expanded="false" />
+            <element signature="e#17438#17574#0" expanded="false" />
+            <element signature="e#17660#17797#0" expanded="false" />
+            <element signature="e#17876#18009#0" expanded="false" />
+            <element signature="e#18093#18229#0" expanded="false" />
+            <element signature="e#18312#18447#0" expanded="false" />
+            <element signature="e#18529#18663#0" expanded="false" />
+            <element signature="e#18696#19242#0" expanded="false" />
+            <element signature="e#19292#19439#0" expanded="false" />
+            <element signature="e#19508#19649#0" expanded="false" />
+            <element signature="e#19721#19865#0" expanded="false" />
+            <element signature="e#19953#20104#0" expanded="false" />
+            <element signature="e#20202#20356#0" expanded="false" />
+            <element signature="e#20453#20606#0" expanded="false" />
+            <element signature="e#20692#20846#0" expanded="false" />
+            <element signature="e#20940#21092#0" expanded="false" />
+            <element signature="e#21191#21345#0" expanded="false" />
+            <element signature="e#21448#21604#0" expanded="false" />
+            <element signature="e#21710#21867#0" expanded="false" />
+            <element signature="e#21967#22122#0" expanded="false" />
+            <element signature="e#22227#22384#0" expanded="false" />
+            <element signature="e#22490#22648#0" expanded="false" />
+            <element signature="e#22739#22894#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

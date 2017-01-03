@@ -1,0 +1,29 @@
+digraph g {
+graph [
+rankdir = "LR"
+];
+node [
+fontsize = "16"
+shape = "ellipse"
+];
+edge [
+];
+"node0" [
+label = "<f0> mange| <f1> verbe"
+shape = "record"
+];
+"node1" [
+label = "<f0> Paul| <f1> Nom| <f2> Agent"
+shape = "record"
+];
+"node2" [
+label = "<f0> pommes| <f1> Nom| <f2> Theme"
+shape = "record"
+];
+"node0":f0 -> "node1":f0 [
+id = 0
+];
+"node0":f0 -> "node2":f0 [
+id = 1
+];
+}

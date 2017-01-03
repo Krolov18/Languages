@@ -1,0 +1,10 @@
+digraph arbre1 {
+	{
+		node [fontsize=12 width=0.5 shape=box]
+		"mange\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]"
+		"Paul\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]"
+		"pommes\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]"
+		}
+	"mange\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]" -> "Paul\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]"
+	"mange\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]" -> "pommes\n[nom:,\nneg:,\nacc:,\ndat:,\ndef:,\nloc:,\nde:,\nindef:,\ntps:,\nasp:,\nmod:,\ngnd:,\nnum:\n]"
+	}
